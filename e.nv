@@ -1,0 +1,11 @@
+# General Configuration
+ENV=development
+
+# Database Configuration
+CHROMA_PATH="./chroma_db"
+
+# Model Configuration
+OLLAMA_BASE_URL="http://localhost:11434"
+MAIN_MODEL="mistral"
+EMBEDDING_MODEL="nomic-embed-text"
+

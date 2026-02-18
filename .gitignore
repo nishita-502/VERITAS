@@ -1,0 +1,24 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Project specific: Local Data & Databases
+data/*.pdf
+!data/sample_resume.pdf
+chroma_db/
+
+# Streamlit specific
+.streamlit/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/

@@ -1,0 +1,25 @@
+# Orchestration and Graph Logic
+langgraph
+langchain
+langchain-community
+langchain-core
+
+# LLM and Embeddings (Ollama Integration)
+langchain-ollama
+
+# Vector Database and Storage
+langchain-chroma
+chromadb
+
+# Document Processing
+pypdf
+langchain-text-splitters
+
+# Tools and External APIs
+duckduckgo-search
+
+# Frontend UI
+streamlit
+
+# Utilities
+python-dotenv
