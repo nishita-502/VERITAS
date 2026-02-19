@@ -1,0 +1,35 @@
+2026-02-19 11:58:31 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 11:58:31 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 11:58:31 | src.extraction.structured_extractor | ERROR | extract:174 | Structured extraction failed: 'Input to ChatPromptTemplate is missing variables {\'\\n    "full_name"\'}.  Expected: [\'\\n    "full_name"\'] Received: []\nNote: if you intended {\n    "full_name"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "full_name"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+2026-02-19 11:58:31 | src.extraction.structured_extractor | INFO | extract:175 | Falling back to regex extraction
+2026-02-19 11:58:31 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:227 | Using regex-only extraction
+2026-02-19 12:04:18 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 12:04:18 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 12:04:18 | src.extraction.structured_extractor | ERROR | extract:174 | Structured extraction failed: 'Input to ChatPromptTemplate is missing variables {\'\\n    "full_name"\'}.  Expected: [\'\\n    "full_name"\'] Received: []\nNote: if you intended {\n    "full_name"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "full_name"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+2026-02-19 12:04:18 | src.extraction.structured_extractor | INFO | extract:175 | Falling back to regex extraction
+2026-02-19 12:04:18 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:227 | Using regex-only extraction
+2026-02-19 12:06:56 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 12:06:56 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 12:06:56 | src.extraction.structured_extractor | ERROR | extract:174 | Structured extraction failed: 'Input to ChatPromptTemplate is missing variables {\'\\n    "full_name"\'}.  Expected: [\'\\n    "full_name"\'] Received: []\nNote: if you intended {\n    "full_name"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "full_name"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+2026-02-19 12:06:56 | src.extraction.structured_extractor | INFO | extract:175 | Falling back to regex extraction
+2026-02-19 12:06:56 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:227 | Using regex-only extraction
+2026-02-19 12:07:08 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 12:07:08 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 12:07:08 | src.extraction.structured_extractor | ERROR | extract:174 | Structured extraction failed: 'Input to ChatPromptTemplate is missing variables {\'\\n    "full_name"\'}.  Expected: [\'\\n    "full_name"\'] Received: []\nNote: if you intended {\n    "full_name"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "full_name"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+2026-02-19 12:07:08 | src.extraction.structured_extractor | INFO | extract:175 | Falling back to regex extraction
+2026-02-19 12:07:08 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:227 | Using regex-only extraction
+2026-02-19 12:09:40 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 12:09:40 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 12:10:37 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 12:10:37 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 12:10:37 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 12:16:52 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 12:16:52 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 12:17:47 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 12:17:47 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 12:17:47 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 13:49:07 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 13:49:07 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 13:50:03 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 13:50:03 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 13:50:03 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully

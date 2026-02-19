@@ -19,7 +19,7 @@ def ingest_resume(file_path: str):
     # 2. Split into chunks (500 chars with some overlap for context)
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=400, 
-        chunk_overlap=50
+        chunk_overlap=200
     )
     splits = text_splitter.split_documents(docs)
     

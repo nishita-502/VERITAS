@@ -1,25 +1,30 @@
 # Orchestration and Graph Logic
-langgraph
-langchain
-langchain-community
-langchain-core
+langgraph>=0.0.38
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-core>=0.1.0
 
 # LLM and Embeddings (Ollama Integration)
-langchain-ollama
+langchain-ollama>=0.1.0
 
 # Vector Database and Storage
-langchain-chroma
-chromadb
+langchain-chroma>=0.1.0
+chromadb>=0.4.0
 
 # Document Processing
-pypdf
-langchain-text-splitters
+pypdf>=3.0.0
+langchain-text-splitters>=0.0.1
 
-# Tools and External APIs
-duckduckgo-search
+# Web Search and External APIs
+requests>=2.31.0
 
 # Frontend UI
-streamlit
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
 
 # Utilities
-python-dotenv
+python-dotenv>=1.0.0
+pydantic>=2.0.0

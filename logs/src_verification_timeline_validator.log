@@ -1,0 +1,32 @@
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: Generative AI
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: Azure Cloud Solution
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: DevOps
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: Mobile App
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_work_experience_timeline:128 | Validating work experience: Software Engineer at Microsoft (None-None)
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_work_experience_timeline:131 | Invalid timeline for Microsoft work experience
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_work_experience_timeline:128 | Validating work experience: Software Development Engineer Intern at Amazon (None-None)
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_work_experience_timeline:131 | Invalid timeline for Amazon work experience
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_work_experience_timeline:128 | Validating work experience: Technology Consultant at Microsoft (None-None)
+2026-02-19 12:18:23 | src.verification.timeline_validator | WARNING | validate_work_experience_timeline:131 | Invalid timeline for Microsoft work experience
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_overall_consistency:172 | Validating overall timeline consistency
+2026-02-19 12:18:23 | src.verification.timeline_validator | INFO | validate_overall_consistency:222 | Overall consistency: 0 overlaps found, chronological: True
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: Generative AI
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: Azure Cloud Solution
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: DevOps
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_project_timeline:57 | Validating timeline for project: Mobile App
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_project_timeline:62 | Could not parse timeline: 
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_work_experience_timeline:128 | Validating work experience: Software Engineer at Microsoft (None-None)
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_work_experience_timeline:131 | Invalid timeline for Microsoft work experience
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_work_experience_timeline:128 | Validating work experience: Software Development Engineer Intern at Amazon (None-None)
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_work_experience_timeline:131 | Invalid timeline for Amazon work experience
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_work_experience_timeline:128 | Validating work experience: Technology Consultant at Microsoft (None-None)
+2026-02-19 13:50:22 | src.verification.timeline_validator | WARNING | validate_work_experience_timeline:131 | Invalid timeline for Microsoft work experience
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_overall_consistency:172 | Validating overall timeline consistency
+2026-02-19 13:50:22 | src.verification.timeline_validator | INFO | validate_overall_consistency:222 | Overall consistency: 0 overlaps found, chronological: True

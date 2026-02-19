@@ -1,0 +1,13 @@
+2026-02-19 11:58:31 | src.extraction.claim_extractor | INFO | extract_claims:24 | Starting claim extraction
+2026-02-19 11:58:31 | src.extraction.claim_extractor | INFO | extract_claims:137 | Extracted 1 claims
+2026-02-19 11:58:31 | src.extraction.claim_extractor | INFO | prioritize_claims:162 | Prioritized 1 claims
+2026-02-19 12:04:18 | src.extraction.claim_extractor | INFO | extract_claims:24 | Starting claim extraction
+2026-02-19 12:04:18 | src.extraction.claim_extractor | INFO | extract_claims:137 | Extracted 1 claims
+2026-02-19 12:04:18 | src.extraction.claim_extractor | INFO | prioritize_claims:162 | Prioritized 1 claims
+2026-02-19 12:10:37 | src.extraction.claim_extractor | INFO | extract_claims:24 | Starting claim extraction
+2026-02-19 12:17:47 | src.extraction.claim_extractor | INFO | extract_claims:24 | Starting claim extraction
+2026-02-19 12:17:47 | src.extraction.claim_extractor | INFO | extract_claims:149 | Extracted 32 claims
+2026-02-19 12:17:47 | src.extraction.claim_extractor | INFO | prioritize_claims:174 | Prioritized 32 claims
+2026-02-19 13:50:03 | src.extraction.claim_extractor | INFO | extract_claims:24 | Starting claim extraction
+2026-02-19 13:50:03 | src.extraction.claim_extractor | INFO | extract_claims:149 | Extracted 32 claims
+2026-02-19 13:50:03 | src.extraction.claim_extractor | INFO | prioritize_claims:174 | Prioritized 32 claims

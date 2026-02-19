@@ -1,0 +1,1 @@
+"""VERITAS Resume Verification System"""

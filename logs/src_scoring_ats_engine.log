@@ -1,0 +1,46 @@
+2026-02-19 11:58:31 | src.scoring.ats_engine | INFO | calculate_ats_score:188 | Calculating ATS score
+2026-02-19 11:58:31 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 11:58:31 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 12:04:18 | src.scoring.ats_engine | INFO | calculate_ats_score:188 | Calculating ATS score
+2026-02-19 12:04:18 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 12:04:18 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_ats_score:188 | Calculating ATS score
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 12:18:23 | src.scoring.ats_engine | WARNING | calculate_skill_match:50 | No JD skills to match against
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:113 | Calculating claim verification rate
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:136 | Claim verification rate: 0.0%
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:142 | Calculating timeline consistency score
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:172 | Timeline consistency: 0.0%
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_ats_score:262 | ATS Score calculated: 0 - 🔴 Poor Match
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_ats_score:188 | Calculating ATS score
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 12:18:23 | src.scoring.ats_engine | WARNING | calculate_skill_match:50 | No JD skills to match against
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:113 | Calculating claim verification rate
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:136 | Claim verification rate: 0.0%
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:142 | Calculating timeline consistency score
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:172 | Timeline consistency: 0.0%
+2026-02-19 12:18:23 | src.scoring.ats_engine | INFO | calculate_ats_score:262 | ATS Score calculated: 16 - 🔴 Poor Match
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_ats_score:188 | Calculating ATS score
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 13:50:22 | src.scoring.ats_engine | WARNING | calculate_skill_match:50 | No JD skills to match against
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:113 | Calculating claim verification rate
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:136 | Claim verification rate: 12.5%
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:142 | Calculating timeline consistency score
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:172 | Timeline consistency: 0.0%
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_ats_score:262 | ATS Score calculated: 4 - 🔴 Poor Match
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_ats_score:188 | Calculating ATS score
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 13:50:22 | src.scoring.ats_engine | WARNING | calculate_skill_match:50 | No JD skills to match against
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:113 | Calculating claim verification rate
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_claim_verification_rate:136 | Claim verification rate: 12.5%
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:142 | Calculating timeline consistency score
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:172 | Timeline consistency: 0.0%
+2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_ats_score:262 | ATS Score calculated: 19 - 🔴 Poor Match

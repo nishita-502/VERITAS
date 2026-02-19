@@ -1,0 +1,16 @@
+2026-02-19 11:58:31 | src.scoring.trust_scorer | INFO | score_resume_completeness:132 | Scoring resume completeness
+2026-02-19 11:58:31 | src.scoring.trust_scorer | INFO | score_resume_completeness:185 | Resume completeness score: 25.0%
+2026-02-19 11:58:31 | src.scoring.trust_scorer | INFO | score_all_claims:58 | Scoring 1 claims
+2026-02-19 11:58:31 | src.scoring.trust_scorer | INFO | score_all_claims:106 | Overall trust score: 50.00
+2026-02-19 12:04:18 | src.scoring.trust_scorer | INFO | score_resume_completeness:132 | Scoring resume completeness
+2026-02-19 12:04:18 | src.scoring.trust_scorer | INFO | score_resume_completeness:185 | Resume completeness score: 25.0%
+2026-02-19 12:04:18 | src.scoring.trust_scorer | INFO | score_all_claims:58 | Scoring 1 claims
+2026-02-19 12:04:18 | src.scoring.trust_scorer | INFO | score_all_claims:106 | Overall trust score: 50.00
+2026-02-19 12:18:23 | src.scoring.trust_scorer | INFO | score_resume_completeness:132 | Scoring resume completeness
+2026-02-19 12:18:23 | src.scoring.trust_scorer | INFO | score_resume_completeness:185 | Resume completeness score: 78.0%
+2026-02-19 12:18:23 | src.scoring.trust_scorer | INFO | score_all_claims:58 | Scoring 32 claims
+2026-02-19 12:18:23 | src.scoring.trust_scorer | INFO | score_all_claims:106 | Overall trust score: 22.81
+2026-02-19 13:50:22 | src.scoring.trust_scorer | INFO | score_resume_completeness:132 | Scoring resume completeness
+2026-02-19 13:50:22 | src.scoring.trust_scorer | INFO | score_all_claims:58 | Scoring 32 claims
+2026-02-19 13:50:22 | src.scoring.trust_scorer | INFO | score_resume_completeness:185 | Resume completeness score: 78.0%
+2026-02-19 13:50:22 | src.scoring.trust_scorer | INFO | score_all_claims:106 | Overall trust score: 30.94

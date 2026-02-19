@@ -1,0 +1,3 @@
+2026-02-19 13:50:03 | src.matching.jd_extractor | INFO | __init__:23 | JDExtractor initialized
+2026-02-19 13:50:03 | src.matching.jd_extractor | INFO | extract_jd_requirements:27 | Extracting JD requirements
+2026-02-19 13:50:03 | src.matching.jd_extractor | ERROR | extract_jd_requirements:58 | Error extracting JD: 'Input to ChatPromptTemplate is missing variables {\'\\n    "job_title"\'}.  Expected: [\'\\n    "job_title"\'] Received: []\nNote: if you intended {\n    "job_title"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "job_title"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '

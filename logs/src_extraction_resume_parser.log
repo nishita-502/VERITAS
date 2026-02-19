@@ -1,0 +1,81 @@
+2026-02-19 11:48:58 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 11:48:58 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\Nishita_Sharma.pdf
+2026-02-19 11:48:58 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\Nishita_Sharma.pdf
+2026-02-19 11:48:59 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 2491 characters
+2026-02-19 11:48:59 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 11:48:59 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 2417 characters
+2026-02-19 11:48:59 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 11:48:59 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 7 chunks
+2026-02-19 11:48:59 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 7 chunks created
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 3566 characters
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 3445 characters
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 10 chunks
+2026-02-19 11:49:23 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 10 chunks created
+2026-02-19 11:58:30 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 11:58:30 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\Nishita_Sharma.pdf
+2026-02-19 11:58:30 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\Nishita_Sharma.pdf
+2026-02-19 11:58:31 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 2491 characters
+2026-02-19 11:58:31 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 11:58:31 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 2417 characters
+2026-02-19 11:58:31 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 11:58:31 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 7 chunks
+2026-02-19 11:58:31 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 7 chunks created
+2026-02-19 12:04:17 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 12:04:17 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\Nishita_Sharma.pdf
+2026-02-19 12:04:17 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\Nishita_Sharma.pdf
+2026-02-19 12:04:18 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 2491 characters
+2026-02-19 12:04:18 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 12:04:18 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 2417 characters
+2026-02-19 12:04:18 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 12:04:18 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 7 chunks
+2026-02-19 12:04:18 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 7 chunks created
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 3566 characters
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 3445 characters
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 10 chunks
+2026-02-19 12:06:56 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 10 chunks created
+2026-02-19 12:07:07 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 12:07:07 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:07:07 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:07:08 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 3566 characters
+2026-02-19 12:07:08 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 12:07:08 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 3445 characters
+2026-02-19 12:07:08 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 12:07:08 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 10 chunks
+2026-02-19 12:07:08 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 10 chunks created
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 3566 characters
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 3445 characters
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 10 chunks
+2026-02-19 12:09:40 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 10 chunks created
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 3566 characters
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 3445 characters
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 10 chunks
+2026-02-19 12:16:52 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 10 chunks created
+2026-02-19 13:49:06 | src.extraction.resume_parser | INFO | __init__:22 | ResumeParser initialized with chunk_size=400, overlap=50
+2026-02-19 13:49:06 | src.extraction.resume_parser | INFO | process_resume:68 | Starting complete resume processing: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 13:49:06 | src.extraction.resume_parser | INFO | parse_pdf:26 | Parsing resume from: C:\Users\User\OneDrive\Documents\VS CODE\VERITAS\data\resume-sample.pdf
+2026-02-19 13:49:07 | src.extraction.resume_parser | INFO | parse_pdf:37 | Successfully parsed PDF: 1 pages, 3566 characters
+2026-02-19 13:49:07 | src.extraction.resume_parser | INFO | parse_text:46 | Normalizing resume text
+2026-02-19 13:49:07 | src.extraction.resume_parser | INFO | parse_text:54 | Text normalization complete: 3445 characters
+2026-02-19 13:49:07 | src.extraction.resume_parser | INFO | chunk_resume:59 | Chunking resume text
+2026-02-19 13:49:07 | src.extraction.resume_parser | INFO | chunk_resume:62 | Created 10 chunks
+2026-02-19 13:49:07 | src.extraction.resume_parser | INFO | process_resume:88 | Resume processing complete: 10 chunks created

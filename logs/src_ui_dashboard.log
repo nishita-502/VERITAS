@@ -1,0 +1,10 @@
+2026-02-19 11:48:59 | src.ui.dashboard | ERROR | run_dashboard:444 | Verification error: No synchronous function provided to "structured_extraction".
+Either initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)
+2026-02-19 11:49:23 | src.ui.dashboard | ERROR | run_dashboard:444 | Verification error: No synchronous function provided to "structured_extraction".
+Either initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)
+2026-02-19 11:58:31 | src.ui.dashboard | ERROR | run_dashboard:444 | Verification error: 'NoneType' object has no attribute 'get'
+2026-02-19 12:04:18 | src.ui.dashboard | ERROR | run_dashboard:456 | Verification error: 'NoneType' object has no attribute 'get'
+2026-02-19 12:06:57 | src.ui.dashboard | ERROR | run_dashboard:456 | Verification error: list index out of range
+2026-02-19 12:07:08 | src.ui.dashboard | ERROR | run_dashboard:456 | Verification error: list index out of range
+2026-02-19 12:10:37 | src.ui.dashboard | ERROR | run_dashboard:456 | Verification error: 'str' object has no attribute 'get'
+2026-02-19 12:18:23 | src.ui.dashboard | ERROR | run_dashboard:456 | Verification error: Progress Value has invalid value [0.0, 1.0]: 1.0909090909090908

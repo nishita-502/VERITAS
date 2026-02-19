@@ -1,0 +1,18 @@
+2026-02-19 11:58:31 | src.verification.verification_engine | INFO | __init__:22 | VerificationEngine initialized
+2026-02-19 11:58:31 | src.verification.verification_engine | INFO | verify_all_claims:30 | Starting comprehensive claim verification
+2026-02-19 11:58:31 | src.verification.verification_engine | INFO | verify_all_claims:76 | Comprehensive verification complete
+2026-02-19 12:04:18 | src.verification.verification_engine | INFO | __init__:22 | VerificationEngine initialized
+2026-02-19 12:04:18 | src.verification.verification_engine | INFO | verify_all_claims:30 | Starting comprehensive claim verification
+2026-02-19 12:04:18 | src.verification.verification_engine | INFO | verify_all_claims:76 | Comprehensive verification complete
+2026-02-19 12:17:47 | src.verification.verification_engine | INFO | __init__:22 | VerificationEngine initialized
+2026-02-19 12:17:47 | src.verification.verification_engine | INFO | verify_all_claims:30 | Starting comprehensive claim verification
+2026-02-19 12:17:47 | src.verification.verification_engine | INFO | verify_all_claims:43 | Running GitHub verification for deep-mm
+2026-02-19 12:18:23 | src.verification.verification_engine | INFO | verify_all_claims:57 | Running tech consistency check
+2026-02-19 12:18:23 | src.verification.verification_engine | INFO | verify_all_claims:64 | Running timeline validation
+2026-02-19 12:18:23 | src.verification.verification_engine | INFO | verify_all_claims:76 | Comprehensive verification complete
+2026-02-19 13:50:03 | src.verification.verification_engine | INFO | __init__:22 | VerificationEngine initialized
+2026-02-19 13:50:03 | src.verification.verification_engine | INFO | verify_all_claims:30 | Starting comprehensive claim verification
+2026-02-19 13:50:03 | src.verification.verification_engine | INFO | verify_all_claims:43 | Running GitHub verification for deep-mm
+2026-02-19 13:50:15 | src.verification.verification_engine | INFO | verify_all_claims:57 | Running tech consistency check
+2026-02-19 13:50:21 | src.verification.verification_engine | INFO | verify_all_claims:64 | Running timeline validation
+2026-02-19 13:50:22 | src.verification.verification_engine | INFO | verify_all_claims:76 | Comprehensive verification complete

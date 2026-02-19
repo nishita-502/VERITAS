@@ -1,0 +1,8 @@
+2026-02-19 12:18:23 | src.verification.tech_consistency_checker | INFO | check_consistency:63 | Checking technology consistency
+2026-02-19 12:18:23 | src.verification.tech_consistency_checker | INFO | check_consistency:124 | Consistency check complete. Score: 0.00
+2026-02-19 12:18:23 | src.verification.tech_consistency_checker | INFO | detect_red_flags:134 | Detecting tech consistency red flags
+2026-02-19 12:18:23 | src.verification.tech_consistency_checker | INFO | detect_red_flags:170 | Found 1 red flags
+2026-02-19 13:50:21 | src.verification.tech_consistency_checker | INFO | check_consistency:63 | Checking technology consistency
+2026-02-19 13:50:21 | src.verification.tech_consistency_checker | INFO | check_consistency:124 | Consistency check complete. Score: 0.24
+2026-02-19 13:50:21 | src.verification.tech_consistency_checker | INFO | detect_red_flags:134 | Detecting tech consistency red flags
+2026-02-19 13:50:21 | src.verification.tech_consistency_checker | INFO | detect_red_flags:170 | Found 2 red flags

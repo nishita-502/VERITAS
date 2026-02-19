@@ -1,0 +1,107 @@
+2026-02-19 11:48:58 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 11:48:59 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 7 chunks
+2026-02-19 11:49:23 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 11:49:23 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 10 chunks
+2026-02-19 11:58:30 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 7 chunks
+2026-02-19 11:58:31 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | structured_extraction_node:50 | Extracted: 0 projects, 0 skills
+2026-02-19 11:58:31 | src.agents.nodes | INFO | claim_detector_node:62 | STAGE: Claim Detector Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | claim_detector_node:70 | Detected 1 claims (prioritized by severity)
+2026-02-19 11:58:31 | src.agents.nodes | INFO | jd_extractor_node:86 | STAGE: JD Extractor Node
+2026-02-19 11:58:31 | src.agents.nodes | WARNING | jd_extractor_node:89 | No JD provided, skipping JD extraction
+2026-02-19 11:58:31 | src.agents.nodes | INFO | verification_orchestrator_node:113 | STAGE: Verification Orchestrator Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | verification_orchestrator_node:124 | Verification complete
+2026-02-19 11:58:31 | src.agents.nodes | INFO | ats_calculator_node:176 | STAGE: ATS Calculator Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | completeness_scorer_node:159 | STAGE: Completeness Scorer Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | red_flag_detector_node:201 | STAGE: Red Flag Detector Node
+2026-02-19 11:58:31 | src.agents.nodes | INFO | red_flag_detector_node:207 | Found 0 red flags (0 high severity)
+2026-02-19 11:58:31 | src.agents.nodes | INFO | trust_scorer_node:140 | STAGE: Trust Scorer Node
+2026-02-19 11:58:31 | src.agents.nodes | ERROR | ats_calculator_node:195 | ATS calculation failed: 'NoneType' object has no attribute 'get'
+2026-02-19 11:58:31 | src.agents.nodes | INFO | completeness_scorer_node:164 | Resume Completeness: 25%
+2026-02-19 12:04:17 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 7 chunks
+2026-02-19 12:04:18 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | structured_extraction_node:50 | Extracted: 0 projects, 0 skills
+2026-02-19 12:04:18 | src.agents.nodes | INFO | claim_detector_node:62 | STAGE: Claim Detector Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | claim_detector_node:70 | Detected 1 claims (prioritized by severity)
+2026-02-19 12:04:18 | src.agents.nodes | INFO | jd_extractor_node:86 | STAGE: JD Extractor Node
+2026-02-19 12:04:18 | src.agents.nodes | WARNING | jd_extractor_node:89 | No JD provided, skipping JD extraction
+2026-02-19 12:04:18 | src.agents.nodes | INFO | verification_orchestrator_node:113 | STAGE: Verification Orchestrator Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | verification_orchestrator_node:124 | Verification complete
+2026-02-19 12:04:18 | src.agents.nodes | INFO | ats_calculator_node:176 | STAGE: ATS Calculator Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | completeness_scorer_node:159 | STAGE: Completeness Scorer Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | red_flag_detector_node:201 | STAGE: Red Flag Detector Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | trust_scorer_node:140 | STAGE: Trust Scorer Node
+2026-02-19 12:04:18 | src.agents.nodes | INFO | red_flag_detector_node:207 | Found 0 red flags (0 high severity)
+2026-02-19 12:04:18 | src.agents.nodes | ERROR | ats_calculator_node:195 | ATS calculation failed: 'NoneType' object has no attribute 'get'
+2026-02-19 12:04:18 | src.agents.nodes | INFO | completeness_scorer_node:164 | Resume Completeness: 25%
+2026-02-19 12:04:18 | src.agents.nodes | INFO | trust_scorer_node:147 | Trust Score: 50/100 - ❓ Moderately Trustworthy
+2026-02-19 12:06:56 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 12:06:56 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 10 chunks
+2026-02-19 12:06:56 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 12:06:57 | src.agents.nodes | ERROR | structured_extraction_node:56 | Structured extraction failed: list index out of range
+2026-02-19 12:07:07 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 12:07:08 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 10 chunks
+2026-02-19 12:07:08 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 12:07:08 | src.agents.nodes | ERROR | structured_extraction_node:56 | Structured extraction failed: list index out of range
+2026-02-19 12:09:40 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 12:09:40 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 10 chunks
+2026-02-19 12:09:40 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 12:10:37 | src.agents.nodes | INFO | structured_extraction_node:50 | Extracted: 4 projects, 21 skills
+2026-02-19 12:10:37 | src.agents.nodes | INFO | claim_detector_node:62 | STAGE: Claim Detector Node
+2026-02-19 12:10:37 | src.agents.nodes | ERROR | claim_detector_node:76 | Claim detection failed: 'str' object has no attribute 'get'
+2026-02-19 12:16:52 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 12:16:52 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 10 chunks
+2026-02-19 12:16:52 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 12:17:47 | src.agents.nodes | INFO | structured_extraction_node:50 | Extracted: 4 projects, 21 skills
+2026-02-19 12:17:47 | src.agents.nodes | INFO | claim_detector_node:62 | STAGE: Claim Detector Node
+2026-02-19 12:17:47 | src.agents.nodes | INFO | claim_detector_node:70 | Detected 32 claims (prioritized by severity)
+2026-02-19 12:17:47 | src.agents.nodes | INFO | jd_extractor_node:86 | STAGE: JD Extractor Node
+2026-02-19 12:17:47 | src.agents.nodes | WARNING | jd_extractor_node:89 | No JD provided, skipping JD extraction
+2026-02-19 12:17:47 | src.agents.nodes | INFO | verification_orchestrator_node:113 | STAGE: Verification Orchestrator Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | verification_orchestrator_node:124 | Verification complete
+2026-02-19 12:18:23 | src.agents.nodes | INFO | ats_calculator_node:176 | STAGE: ATS Calculator Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | completeness_scorer_node:159 | STAGE: Completeness Scorer Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | red_flag_detector_node:201 | STAGE: Red Flag Detector Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | trust_scorer_node:140 | STAGE: Trust Scorer Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | red_flag_detector_node:207 | Found 1 red flags (1 high severity)
+2026-02-19 12:18:23 | src.agents.nodes | INFO | completeness_scorer_node:164 | Resume Completeness: 78%
+2026-02-19 12:18:23 | src.agents.nodes | INFO | trust_scorer_node:147 | Trust Score: 23/100 - 🚩 Low Trustworthiness
+2026-02-19 12:18:23 | src.agents.nodes | INFO | ats_calculator_node:189 | ATS Score: 0/100 - 🔴 Poor Match
+2026-02-19 12:18:23 | src.agents.nodes | INFO | ats_calculator_node:176 | STAGE: ATS Calculator Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | executive_summary_node:223 | STAGE: Executive Summary Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | executive_summary_node:232 | Recommendation: 🔴 NOT RECOMMENDED - Consider rejection
+2026-02-19 12:18:23 | src.agents.nodes | INFO | ats_calculator_node:189 | ATS Score: 16/100 - 🔴 Poor Match
+2026-02-19 12:18:23 | src.agents.nodes | INFO | executive_summary_node:223 | STAGE: Executive Summary Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | final_report_generator_node:244 | STAGE: Final Report Generator Node
+2026-02-19 12:18:23 | src.agents.nodes | INFO | executive_summary_node:232 | Recommendation: 🔴 NOT RECOMMENDED - Consider rejection
+2026-02-19 12:18:23 | src.agents.nodes | INFO | final_report_generator_node:259 | Final report generated successfully
+2026-02-19 13:49:06 | src.agents.nodes | INFO | resume_parser_node:23 | STAGE: Resume Parser Node
+2026-02-19 13:49:07 | src.agents.nodes | INFO | resume_parser_node:29 | Parsed resume: 10 chunks
+2026-02-19 13:49:07 | src.agents.nodes | INFO | structured_extraction_node:41 | STAGE: Structured Extraction Node
+2026-02-19 13:50:03 | src.agents.nodes | INFO | structured_extraction_node:50 | Extracted: 4 projects, 21 skills
+2026-02-19 13:50:03 | src.agents.nodes | INFO | claim_detector_node:62 | STAGE: Claim Detector Node
+2026-02-19 13:50:03 | src.agents.nodes | INFO | claim_detector_node:70 | Detected 32 claims (prioritized by severity)
+2026-02-19 13:50:03 | src.agents.nodes | INFO | jd_extractor_node:86 | STAGE: JD Extractor Node
+2026-02-19 13:50:03 | src.agents.nodes | INFO | verification_orchestrator_node:113 | STAGE: Verification Orchestrator Node
+2026-02-19 13:50:03 | src.agents.nodes | INFO | jd_extractor_node:97 | Extracted JD: Unknown, 0 required skills
+2026-02-19 13:50:22 | src.agents.nodes | INFO | verification_orchestrator_node:124 | Verification complete
+2026-02-19 13:50:22 | src.agents.nodes | INFO | ats_calculator_node:176 | STAGE: ATS Calculator Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | completeness_scorer_node:159 | STAGE: Completeness Scorer Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | red_flag_detector_node:201 | STAGE: Red Flag Detector Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | trust_scorer_node:140 | STAGE: Trust Scorer Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | red_flag_detector_node:207 | Found 2 red flags (1 high severity)
+2026-02-19 13:50:22 | src.agents.nodes | INFO | completeness_scorer_node:164 | Resume Completeness: 78%
+2026-02-19 13:50:22 | src.agents.nodes | INFO | trust_scorer_node:147 | Trust Score: 31/100 - 🚩 Low Trustworthiness
+2026-02-19 13:50:22 | src.agents.nodes | INFO | ats_calculator_node:189 | ATS Score: 4/100 - 🔴 Poor Match
+2026-02-19 13:50:22 | src.agents.nodes | INFO | ats_calculator_node:176 | STAGE: ATS Calculator Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | executive_summary_node:223 | STAGE: Executive Summary Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | executive_summary_node:232 | Recommendation: 🔴 NOT RECOMMENDED - Consider rejection
+2026-02-19 13:50:22 | src.agents.nodes | INFO | ats_calculator_node:189 | ATS Score: 19/100 - 🔴 Poor Match
+2026-02-19 13:50:22 | src.agents.nodes | INFO | executive_summary_node:223 | STAGE: Executive Summary Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | final_report_generator_node:244 | STAGE: Final Report Generator Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | executive_summary_node:232 | Recommendation: 🔴 NOT RECOMMENDED - Consider rejection
+2026-02-19 13:50:22 | src.agents.nodes | INFO | final_report_generator_node:259 | Final report generated successfully
+2026-02-19 13:50:22 | src.agents.nodes | INFO | final_report_generator_node:244 | STAGE: Final Report Generator Node
+2026-02-19 13:50:22 | src.agents.nodes | INFO | final_report_generator_node:259 | Final report generated successfully
