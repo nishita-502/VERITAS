@@ -4,8 +4,8 @@ langchain>=0.1.0
 langchain-community>=0.0.20
 langchain-core>=0.1.0
 
-# LLM and Embeddings (Ollama Integration)
-langchain-ollama>=0.1.0
+# LLM and Embeddings (Groq Integration)
+langchain-groq>=1.1.0
 
 # Vector Database and Storage
 langchain-chroma>=0.1.0

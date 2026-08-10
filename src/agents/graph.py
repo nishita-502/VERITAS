@@ -4,6 +4,7 @@ VERITAS Agent Graph - Orchestrates the entire verification workflow
 from langgraph.graph import END, StateGraph
 from src.agents.state import GraphState
 from src.agents.nodes import (
+    privacy_preprocessor_node,
     resume_parser_node,
     structured_extraction_node,
     claim_detector_node,
@@ -29,6 +30,7 @@ def build_workflow():
 
     # ========== EXTRACTION STAGE ==========
     workflow.add_node("resume_parser", resume_parser_node)
+    workflow.add_node("privacy_preprocessor", privacy_preprocessor_node)
     workflow.add_node("structured_extraction", structured_extraction_node)
     workflow.add_node("claim_detector", claim_detector_node)
     
@@ -53,7 +55,8 @@ def build_workflow():
     workflow.set_entry_point("resume_parser")
     
     # Extraction pipeline
-    workflow.add_edge("resume_parser", "structured_extraction")
+    workflow.add_edge("resume_parser", "privacy_preprocessor")
+    workflow.add_edge("privacy_preprocessor", "structured_extraction")
     workflow.add_edge("structured_extraction", "claim_detector")
     
     # Parallel: JD extraction (if JD provided)

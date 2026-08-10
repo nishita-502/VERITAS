@@ -33,3 +33,113 @@
 2026-02-19 13:50:03 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
 2026-02-19 13:50:03 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
 2026-02-19 13:50:03 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 17:08:00 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 17:08:00 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 17:10:09 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 17:10:09 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 17:10:09 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 17:21:35 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 17:21:35 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 17:22:42 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 17:22:42 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 17:22:42 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 17:35:20 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 17:35:20 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 17:36:05 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 17:36:05 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 17:36:05 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 17:40:33 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 17:40:33 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 17:41:09 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 17:41:09 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 17:41:09 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 17:49:52 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 17:49:52 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 17:50:38 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 17:50:38 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 17:50:38 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-19 17:55:01 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-19 17:55:01 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-19 17:55:37 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-19 17:55:37 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-19 17:55:37 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 09:32:10 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 09:32:10 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 09:34:29 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 09:34:29 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 09:34:29 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 09:42:42 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 09:42:42 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 09:45:07 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 09:45:07 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 09:45:07 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 10:28:14 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 10:28:14 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 10:29:11 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 10:29:11 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 10:29:11 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 10:32:56 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 10:32:56 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 10:33:51 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 10:33:51 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 10:33:51 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 10:35:30 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 10:35:30 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 10:36:24 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 10:36:24 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 10:36:24 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 10:37:09 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 10:37:09 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 10:38:04 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 10:38:04 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 10:38:04 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 10:40:12 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 10:40:12 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 10:41:08 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 10:41:08 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 10:41:08 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 11:46:03 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 11:46:03 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 11:46:59 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 11:46:59 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 11:46:59 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-02-20 11:51:14 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-02-20 11:51:14 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-02-20 11:52:09 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-02-20 11:52:09 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-02-20 11:52:09 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-05-19 17:26:56 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-05-19 17:26:56 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-05-19 17:34:34 | src.extraction.structured_extractor | INFO | extract:136 | Structured extraction successful
+2026-05-19 17:34:34 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:145 | Merging LLM results with regex fallback
+2026-05-19 17:34:41 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:187 | Merge completed successfully
+2026-08-09 13:20:55 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-08-09 13:20:55 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-08-09 13:20:59 | src.extraction.structured_extractor | ERROR | extract:139 | Structured extraction failed: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-08-09 13:20:59 | src.extraction.structured_extractor | INFO | extract:140 | Falling back to regex extraction
+2026-08-09 13:20:59 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:192 | Using regex-only extraction
+2026-08-09 13:21:25 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-08-09 13:21:25 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-08-09 13:21:29 | src.extraction.structured_extractor | ERROR | extract:139 | Structured extraction failed: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-08-09 13:21:29 | src.extraction.structured_extractor | INFO | extract:140 | Falling back to regex extraction
+2026-08-09 13:21:29 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:192 | Using regex-only extraction
+2026-08-09 13:35:22 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-08-09 13:35:22 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-08-09 13:35:26 | src.extraction.structured_extractor | ERROR | extract:139 | Structured extraction failed: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-08-09 13:35:26 | src.extraction.structured_extractor | INFO | extract:140 | Falling back to regex extraction
+2026-08-09 13:35:26 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:192 | Using regex-only extraction
+2026-08-10 10:03:46 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-08-10 10:03:46 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-08-10 10:03:50 | src.extraction.structured_extractor | ERROR | extract:139 | Structured extraction failed: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-08-10 10:03:50 | src.extraction.structured_extractor | INFO | extract:140 | Falling back to regex extraction
+2026-08-10 10:03:50 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:192 | Using regex-only extraction
+2026-08-10 12:49:46 | src.extraction.structured_extractor | INFO | __init__:94 | StructuredExtractor initialized with model: mistral
+2026-08-10 12:49:46 | src.extraction.structured_extractor | INFO | extract:98 | Starting structured extraction from resume
+2026-08-10 12:49:50 | src.extraction.structured_extractor | ERROR | extract:139 | Structured extraction failed: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-08-10 12:49:50 | src.extraction.structured_extractor | INFO | extract:140 | Falling back to regex extraction
+2026-08-10 12:49:50 | src.extraction.structured_extractor | WARNING | _regex_only_extraction:192 | Using regex-only extraction
+2026-08-10 14:01:58 | src.extraction.structured_extractor | INFO | __init__:95 | StructuredExtractor initialized with Groq model: llama-3.3-70b-versatile
+2026-08-10 14:01:58 | src.extraction.structured_extractor | INFO | extract:104 | Starting structured extraction from resume
+2026-08-10 14:02:01 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:193 | Merging LLM results with regex fallback
+2026-08-10 14:02:01 | src.extraction.structured_extractor | INFO | _merge_with_regex_fallback:237 | Merge completed successfully
+2026-08-10 14:02:01 | src.extraction.structured_extractor | INFO | extract:147 | Structured extraction successful

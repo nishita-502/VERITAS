@@ -5,6 +5,7 @@ Each node represents a step in the verification pipeline
 from typing import Dict, Any
 from src.core.logging_config import get_logger
 from src.extraction import ResumeParser, StructuredExtractor, ClaimExtractor
+from src.extraction.privacy import PrivacyScrubber
 from src.verification import VerificationEngine, TechConsistencyChecker, TimelineValidator
 from src.scoring import TrustScorer, ATSEngine
 from src.scoring.scoring_utils import generate_red_flag_report, generate_executive_summary
@@ -18,18 +19,44 @@ logger = get_logger(__name__)
 # EXTRACTION NODES
 # ============================================================================
 
+def privacy_preprocessor_node(state: GraphState) -> Dict[str, Any]:
+    """Scrub obvious PII before any cloud LLM sees the resume text."""
+
+    logger.info("STAGE: Privacy Preprocessor Node")
+
+    try:
+        raw_text = state.get("extracted_resume_data", {}).get("raw_text", "")
+        sanitized_text, redactions = PrivacyScrubber.scrub(raw_text)
+
+        logger.info("PII scrub complete: %s redaction(s)", len(redactions))
+
+        return {
+            "sanitized_resume_text": sanitized_text,
+            "pii_redactions": redactions,
+        }
+    except Exception as e:
+        logger.error(f"Privacy preprocessing failed: {str(e)}")
+        raise
+
 def resume_parser_node(state: GraphState) -> Dict[str, Any]:
     """Parse and load resume PDF"""
     logger.info("STAGE: Resume Parser Node")
     
     try:
         parser = ResumeParser()
-        resume_data = parser.process_resume(state["resume_file_path"])
+        resume_data = parser.process_resume(
+            file_path=state.get("resume_file_path"),
+            pdf_bytes=state.get("resume_file_bytes"),
+        )
         
-        logger.info(f"Parsed resume: {resume_data['total_chunks']} chunks")
+        logger.info(f"Parsed resume: {resume_data['total_chunks']} chunks from {resume_data.get('source', 'unknown')}")
         
         return {
-            "extracted_resume_data": {"raw_text": resume_data["normalized_text"]}
+            "extracted_resume_data": {
+                "raw_text": resume_data["raw_text"],
+                "normalized_text": resume_data["normalized_text"],
+                "source": resume_data.get("source"),
+            }
         }
     except Exception as e:
         logger.error(f"Resume parsing failed: {str(e)}")
@@ -43,7 +70,11 @@ def structured_extraction_node(state: GraphState) -> Dict[str, Any]:
     try:
         import asyncio
         extractor = StructuredExtractor()
-        raw_text = state["extracted_resume_data"]["raw_text"]
+        raw_text = (
+            state.get("sanitized_resume_text")
+            or state.get("extracted_resume_data", {}).get("normalized_text")
+            or state.get("extracted_resume_data", {}).get("raw_text", "")
+        )
         
         structured_data = asyncio.run(extractor.extract(raw_text))
         
@@ -176,14 +207,13 @@ def ats_calculator_node(state: GraphState) -> Dict[str, Any]:
     logger.info("STAGE: ATS Calculator Node")
     
     try:
-        jd_text = state.get("jd_text", "")
-        
         ats_report = ATSEngine.calculate_ats_score(
-            jd_text=jd_text,
+            jd_text=state.get("jd_text", ""),
             extracted_data=state["extracted_resume_data"],
             claim_results=state.get("verification_results", {}).get("all_claim_results", []),
             verification_results=state.get("verification_results", {}),
-            completeness_score=state.get("resume_completeness_score", {})
+            completeness_score=state.get("resume_completeness_score", {}),
+            jd_data=state.get("extracted_jd_data", {}),
         )
         
         logger.info(f"ATS Score: {ats_report['ats_score']}/100 - {ats_report['ats_status']}")

@@ -3,13 +3,16 @@ Verification Engine
 Orchestrates all verification agents and combines results
 """
 from typing import Dict, Any, List
+
 from src.core.logging_config import get_logger
 from src.verification.github_agent import GitHubAgent
 from src.verification.kaggle_agent import KaggleAgent
 from src.verification.tech_consistency_checker import TechConsistencyChecker
 from src.verification.timeline_validator import TimelineValidator
+from src.verification.cp_agent import CPAgentReal
 
 logger = get_logger(__name__)
+
 
 class VerificationEngine:
     """Orchestrate verification across all sources"""
@@ -19,6 +22,7 @@ class VerificationEngine:
         self.kaggle = KaggleAgent()
         self.tech_checker = TechConsistencyChecker()
         self.timeline_validator = TimelineValidator()
+        self.cp_agent = CPAgentReal()
         logger.info("VerificationEngine initialized")
     
     async def verify_all_claims(
@@ -33,7 +37,7 @@ class VerificationEngine:
             "github_verification": None,
             "kaggle_verification": None,
             "tech_consistency": None,
-            "timeline_validity": None,
+            "competitive_programming": None,
             "all_claim_results": [],
             "red_flags": [],
         }
@@ -56,15 +60,18 @@ class VerificationEngine:
         if extracted_data.get("skills") or extracted_data.get("projects"):
             logger.info("Running tech consistency check")
             verification_results["tech_consistency"] = await self._check_tech_consistency(
-                extracted_data
+                extracted_data,
+                verification_results.get("github_verification", {}),
             )
         
-        # Timeline Validation
-        if extracted_data.get("projects") or extracted_data.get("work_experience"):
-            logger.info("Running timeline validation")
-            verification_results["timeline_validity"] = await self._validate_timelines(
-                extracted_data
-            )
+        # TIMELINE VALIDATION REMOVED - Timeline is not part of ATS scoring
+        # (Only used for informational purposes, not penalization)
+        
+        # Competitive Programming Verification (DSA/LeetCode/Codeforces/etc)
+        logger.info("Running competitive programming verification")
+        verification_results["competitive_programming"] = await self.cp_agent.verify_all_platforms(
+            extracted_data
+        )
         
         # Comprehensive claim evaluation
         verification_results["all_claim_results"] = await self._evaluate_all_claims(
@@ -80,35 +87,29 @@ class VerificationEngine:
         """Run GitHub verification"""
         username = extracted_data.get("github_username")
         
+        clean_username = self.github.sanitize_github_username(username)
         result = {
-            "username": username,
+            "username": clean_username,
             "stage": "github_verification",
-            "user_profile": self.github.verify_user_exists(username),
+            "user_profile": self.github.verify_user_exists(clean_username),
             "projects_verified": {},
             "tech_verification": {},
+            "language_footprint": {},
         }
-        
+
         if result["user_profile"].get("exists"):
-            # Verify projects
-            if extracted_data.get("projects"):
-                result["projects_verified"] = self.github.verify_project_claims(
-                    username,
-                    extracted_data["projects"]
-                )
-            
-            # Verify tech stack
+            project_verification = self.github.verify_project_claims(
+                clean_username,
+                extracted_data.get("projects", []),
+            )
+            result["projects_verified"] = project_verification
+            result["language_footprint"] = project_verification.get("language_footprint", {})
+
             if extracted_data.get("skills"):
-                repos = self.github.get_repositories(username)
-                all_languages = {}
-                
-                for repo in repos:
-                    langs = self.github.get_repo_languages(username, repo["name"])
-                    for lang, bytes_count in langs.items():
-                        all_languages[lang] = all_languages.get(lang, 0) + 1
-                
                 result["tech_verification"] = self.github.verify_tech_stack(
-                    username,
-                    extracted_data["skills"]
+                    clean_username,
+                    extracted_data["skills"],
+                    project_claims=extracted_data.get("projects", []),
                 )
         
         return result
@@ -129,20 +130,19 @@ class VerificationEngine:
         
         return result
     
-    async def _check_tech_consistency(self, extracted_data: Dict[str, Any]) -> Dict[str, Any]:
+    async def _check_tech_consistency(
+        self,
+        extracted_data: Dict[str, Any],
+        github_result: Dict[str, Any],
+    ) -> Dict[str, Any]:
         """Check technology consistency"""
-        github_result = None
+        all_languages = {}
         if extracted_data.get("github_username"):
-            username = extracted_data["github_username"]
-            repos = self.github.get_repositories(username)
-            all_languages = {}
-            
-            for repo in repos:
-                langs = self.github.get_repo_languages(username, repo["name"])
-                for lang, bytes_count in langs.items():
-                    all_languages[lang] = all_languages.get(lang, 0) + 1
-        else:
-            all_languages = {}
+            all_languages = (
+                (github_result or {}).get("language_footprint")
+                or ((github_result or {}).get("projects_verified") or {}).get("language_footprint")
+                or {}
+            )
         
         consistency = self.tech_checker.check_consistency(
             claimed_skills=extracted_data.get("skills", []),
@@ -235,8 +235,8 @@ class VerificationEngine:
             "claim_id": claim.get("id"),
             "claim_type": claim_type,
             "value": value,
-            "status": "unverified",
-            "trust_score": 0,
+            "status": "self_reported",
+            "trust_score": 50,
             "evidence": [],
             "reasoning": "",
         }
@@ -259,13 +259,14 @@ class VerificationEngine:
             for p in partial:
                 if p.get("skill") == value.lower():
                     result["status"] = "partially_verified"
-                    result["trust_score"] = 70
+                    result["trust_score"] = 75
                     result["evidence"].append(f"Found in {p.get('found_in', 'projects')}")
                     break
             
             if result["status"] == "unverified":
-                result["trust_score"] = 30
-                result["evidence"].append("Not found in GitHub, projects, or work experience")
+                result["status"] = "self_reported"
+                result["trust_score"] = 50
+                result["evidence"].append("Self-reported claim; no contradictory evidence found")
         
         elif claim_type == "link_verification":
             # Check if link is accessible
@@ -275,6 +276,10 @@ class VerificationEngine:
                     result["status"] = "verified"
                     result["trust_score"] = 100
                     result["evidence"].append("GitHub profile verified")
+                else:
+                    result["status"] = "self_reported"
+                    result["trust_score"] = 50
+                    result["evidence"].append("GitHub link provided, but profile could not be verified")
             
             elif extracted_data.get("kaggle_username") and "kaggle" in value.lower():
                 kaggle_info = verification_results.get("kaggle_verification", {})
@@ -282,10 +287,14 @@ class VerificationEngine:
                     result["status"] = "verified"
                     result["trust_score"] = 100
                     result["evidence"].append("Kaggle profile verified")
+                else:
+                    result["status"] = "self_reported"
+                    result["trust_score"] = 50
+                    result["evidence"].append("Kaggle link provided, but profile could not be verified")
         
         elif claim_type == "numeric":
-            result["trust_score"] = 50  # Default for numeric without specific verification
-            result["evidence"].append("Numeric claim extracted from resume")
+            result["trust_score"] = 50
+            result["evidence"].append("Numeric claim self-reported in resume")
         
         elif claim_type == "timeline":
             timeline_info = verification_results.get("timeline_validity", {})
@@ -295,6 +304,9 @@ class VerificationEngine:
                     result["status"] = "verified"
                     result["trust_score"] = 90
                     break
+            if result["status"] == "self_reported":
+                result["trust_score"] = 50
+                result["evidence"].append("Timeline claim remains self-reported unless a direct contradiction is detected")
         
         result["reasoning"] = self._generate_reasoning(result)
         return result

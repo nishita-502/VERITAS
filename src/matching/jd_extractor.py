@@ -2,35 +2,96 @@
 JD Extractor and Skill Matcher
 """
 from typing import List, Dict, Any
-from langchain_ollama import ChatOllama
+
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_groq import ChatGroq
 from langchain_core.output_parsers import JsonOutputParser
-from src.core.config import LLM_MODEL, LLM_BASE_URL, LLM_TEMPERATURE
+
+from src.core.config import GROQ_API_KEY, GROQ_MODEL, GROQ_TEMPERATURE
 from src.core.logging_config import get_logger
 
 logger = get_logger(__name__)
 
+
 class JDExtractor:
     """Extract structured data from Job Description"""
+
+    # Predefined role-to-skill mapping for vague JDs
+    ROLE_SKILL_MAPPING = {
+        "full stack developer": ["React", "Node.js", "SQL", "REST APIs", "JavaScript", "HTML", "CSS", "Git"],
+        "backend developer": ["Python", "Java", "Node.js", "SQL", "REST APIs", "Git", "Docker"],
+        "frontend developer": ["React", "JavaScript", "HTML", "CSS", "TypeScript", "Git", "Responsive Design"],
+        "ml engineer": ["Python", "TensorFlow", "PyTorch", "Data Science", "Pandas", "NumPy", "Scikit-learn"],
+        "data scientist": ["Python", "SQL", "Pandas", "NumPy", "Matplotlib", "Data Analysis", "Statistics"],
+        "devops engineer": ["Docker", "Kubernetes", "AWS", "CI/CD", "Git", "Linux", "Terraform"],
+        "cloud engineer": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform"],
+        "ios developer": ["Swift", "Objective-C", "iOS SDK", "Git"],
+        "android developer": ["Java", "Kotlin", "Android SDK", "Git"],
+        "python developer": ["Python", "Django", "Flask", "SQL", "Git"],
+        "java developer": ["Java", "Spring", "SQL", "Git", "REST APIs"],
+        "c++ developer": ["C++", "Git", "Memory Management", "STL"],
+        "qa engineer": ["Testing", "Automation", "Selenium", "Git", "JIRA"],
+        "devops": ["Docker", "Kubernetes", "AWS", "CI/CD", "Git"],
+        "cloud": ["AWS", "Azure", "GCP", "Docker", "Kubernetes"],
+        "ai engineer": ["Python", "TensorFlow", "PyTorch", "Machine Learning", "Data Science"],
+    }
     
     def __init__(self):
-        self.llm = ChatOllama(
-            model=LLM_MODEL,
-            base_url=LLM_BASE_URL,
-            temperature=LLM_TEMPERATURE,
-            format="json"
-        )
+        self.llm = None
+        if GROQ_API_KEY:
+            try:
+                self.llm = ChatGroq(
+                    model=GROQ_MODEL,
+                    temperature=GROQ_TEMPERATURE,
+                    groq_api_key=GROQ_API_KEY,
+                )
+            except Exception as exc:
+                logger.error("Groq JD extractor initialization failed: %s", exc)
+        else:
+            logger.warning("GROQ_API_KEY not configured; JD extraction will use heuristics only")
+
         logger.info("JDExtractor initialized")
+    
+    def infer_skills_from_title(self, job_title: str) -> List[str]:
+        """Infer required skills from job title if JD is vague"""
+        logger.info(f"Inferring skills for job title: {job_title}")
+        
+        title_lower = job_title.lower().strip()
+        
+        # Check for direct match in mapping
+        for role_pattern, skills in self.ROLE_SKILL_MAPPING.items():
+            if role_pattern in title_lower:
+                logger.info(f"Found skill mapping for role: {role_pattern}")
+                return skills
+        
+        # If no direct match, try to extract keywords and return default technical skills
+        logger.warning(f"No skill mapping found for: {job_title}, using generic technical skills")
+        return ["Git", "Problem Solving", "Communication", "Teamwork"]
     
     async def extract_jd_requirements(self, jd_text: str) -> Dict[str, Any]:
         """Extract structured requirements from JD"""
         logger.info("Extracting JD requirements")
         
+        if not self.llm:
+            logger.warning("No Groq client available, using heuristic JD extraction")
+            return {
+                "job_title": "Unknown",
+                "company": "Unknown",
+                "required_skills": [],
+                "preferred_skills": [],
+                "technologies_mentioned": [],
+                "key_responsibilities": [],
+                "years_of_experience": None,
+                "required_education": None,
+                "salary_range": None,
+                "location": None,
+            }
+
         prompt = ChatPromptTemplate.from_messages([
             ("system", """You are a job description analyzer. Extract structured data from the JD.
 
 Return ONLY valid JSON with this structure:
-{
+{{
     "job_title": "string",
     "company": "string",
     "required_skills": ["string"],
@@ -41,18 +102,32 @@ Return ONLY valid JSON with this structure:
     "technologies_mentioned": ["string"],
     "salary_range": "string or null",
     "location": "string or null"
-}
+}}
 
 Be thorough in extracting all skills and technologies mentioned."""),
-            ("human", f"Extract requirements from this JD:\n\n{jd_text}")
+            ("human", "Extract requirements from this JD:\n\n{jd_content}")
         ])
         
         parser = JsonOutputParser()
         chain = prompt | self.llm | parser
         
         try:
-            result = chain.invoke({})
+            result = chain.invoke({"jd_content": jd_text})
             logger.info(f"Extracted JD: {result.get('job_title')}")
+            
+            # Ensure required fields exist
+            if not result.get("required_skills"):
+                result["required_skills"] = []
+            if not result.get("technologies_mentioned"):
+                result["technologies_mentioned"] = []
+            
+            # CRITICAL FIX: If no skills extracted, use AI brain to infer from job title
+            if len(result.get("required_skills", [])) == 0:
+                logger.warning(f"No required skills extracted from JD, inferring from title: {result.get('job_title')}")
+                inferred_skills = self.infer_skills_from_title(result.get("job_title", ""))
+                result["required_skills"] = inferred_skills
+                result["inferred_from_title"] = True
+            
             return result
         except Exception as e:
             logger.error(f"Error extracting JD: {str(e)}")

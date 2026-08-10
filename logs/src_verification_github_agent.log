@@ -290,3 +290,703 @@
 2026-02-19 13:50:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
 2026-02-19 13:50:21 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
 2026-02-19 13:50:22 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-19 17:10:09 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-19 17:10:09 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-19 17:10:10 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-19 17:10:10 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-19 17:10:10 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-19 17:10:10 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-19 17:10:10 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-19 17:10:10 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-19 17:10:11 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-19 17:10:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-19 17:10:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-19 17:10:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-19 17:10:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-19 17:10:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-19 17:10:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-19 17:10:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-19 17:10:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-19 17:10:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-19 17:10:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-19 17:10:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-19 17:10:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-19 17:10:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-19 17:10:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-19 17:10:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-19 17:10:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-19 17:10:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-19 17:10:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-19 17:10:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-19 17:10:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-19 17:10:16 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-19 17:10:16 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-19 17:10:16 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-19 17:10:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-19 17:10:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-19 17:10:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-19 17:10:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-19 17:10:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-19 17:10:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-19 17:10:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-19 17:10:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-19 17:10:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-19 17:10:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-19 17:10:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-19 17:10:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-19 17:10:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-19 17:10:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-19 17:10:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-19 17:10:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-19 17:10:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-19 17:10:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-19 17:10:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-19 17:10:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-19 17:10:21 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-19 17:10:21 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-19 17:10:22 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-19 17:10:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-19 17:10:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-19 17:10:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-19 17:10:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-19 17:10:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-19 17:10:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-19 17:10:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-19 17:10:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-19 17:10:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-19 17:10:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-19 17:10:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-19 17:10:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-19 17:10:25 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-19 17:10:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-19 17:10:25 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-19 17:10:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-19 17:10:26 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-19 17:10:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-19 17:10:26 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-19 17:10:27 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-19 17:10:27 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-19 17:10:27 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-19 17:22:42 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-19 17:36:05 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-19 17:41:09 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-19 17:50:38 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-19 17:55:38 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 09:34:29 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 09:45:08 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 09:45:08 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 09:45:08 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 09:45:08 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 09:45:08 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 09:45:09 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 09:45:09 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 09:45:09 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 09:45:09 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 09:45:09 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 09:45:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 09:45:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 09:45:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 09:45:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 09:45:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 09:45:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 09:45:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 09:45:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 09:45:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 09:45:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 09:45:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 09:45:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 09:45:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 09:45:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 09:45:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 09:45:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 09:45:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 09:45:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 09:45:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 09:45:14 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 09:45:14 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 09:45:15 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 09:45:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 09:45:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 09:45:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 09:45:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 09:45:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 09:45:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 09:45:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 09:45:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 09:45:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 09:45:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 09:45:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 09:45:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 09:45:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 09:45:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 09:45:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 09:45:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 09:45:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 09:45:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 09:45:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 09:45:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 09:45:20 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 09:45:20 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 09:45:21 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 09:45:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 09:45:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 09:45:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 09:45:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 09:45:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 09:45:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 09:45:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 09:45:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 09:45:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 09:45:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 09:45:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 09:45:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 09:45:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 09:45:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 09:45:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 09:45:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 09:45:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 09:45:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 09:45:25 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 09:45:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:29:11 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 10:29:11 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 10:29:11 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 10:29:11 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 10:29:11 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:29:12 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:29:12 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 10:29:12 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:29:12 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:29:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:29:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:29:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:29:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:29:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:29:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:29:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:29:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:29:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:29:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:29:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:29:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:29:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:29:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:29:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:29:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:29:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:29:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:29:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:29:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:29:17 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 10:29:17 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:29:17 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:29:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:29:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:29:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:29:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:29:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:29:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:29:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:29:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:29:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:29:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:29:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:29:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:29:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:29:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:29:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 10:29:21 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:29:22 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:29:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:29:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:29:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:29:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:29:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:29:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:29:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:29:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:29:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:29:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:29:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:29:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:29:25 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:29:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:29:25 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:29:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:29:26 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:29:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:29:26 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:29:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:33:51 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 10:33:51 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 10:33:51 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 10:33:51 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 10:33:51 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:33:52 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:33:52 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 10:33:52 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:33:52 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:33:52 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:33:53 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:33:53 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:33:53 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:33:53 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:33:54 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:33:54 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:33:54 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:33:54 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:33:55 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:33:55 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:33:55 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:33:55 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:33:55 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:33:55 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:33:56 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:33:56 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:33:56 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:33:56 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:33:57 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:33:57 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 10:33:57 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:33:57 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:33:57 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:33:58 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:33:58 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:33:58 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:33:58 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:33:59 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:33:59 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:33:59 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:33:59 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:33:59 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:33:59 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:34:00 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:34:00 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:34:00 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:34:00 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:34:01 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:34:01 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:34:01 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:34:01 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:34:02 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:34:02 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 10:34:02 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:34:02 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:34:02 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:34:03 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:34:03 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:34:03 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:34:03 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:34:04 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:34:04 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:34:04 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:34:04 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:34:04 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:34:04 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:34:05 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:34:05 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:34:05 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:34:05 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:34:06 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:34:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:34:06 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:34:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:34:07 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:36:24 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 10:36:24 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 10:36:25 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 10:36:25 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 10:36:25 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:36:25 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:36:25 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 10:36:25 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:36:26 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:36:26 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:36:26 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:36:26 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:36:27 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:36:27 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:36:27 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:36:27 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:36:27 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:36:27 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:36:28 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:36:28 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:36:28 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:36:28 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:36:29 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:36:29 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:36:29 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:36:29 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:36:30 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:36:30 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:36:30 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:36:30 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 10:36:30 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:36:31 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:36:31 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:36:31 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:36:31 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:36:31 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:36:31 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:36:32 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:36:32 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:36:32 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:36:32 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:36:33 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:36:33 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:36:33 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:36:33 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:36:34 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:36:34 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:36:34 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:36:34 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:36:34 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:36:34 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:36:35 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:36:35 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 10:36:35 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:36:35 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:36:35 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:36:36 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:36:36 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:36:36 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:36:36 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:36:37 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:36:37 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:36:37 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:36:37 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:36:37 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:36:37 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:36:38 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:36:38 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:36:38 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:36:38 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:36:39 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:36:39 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:36:39 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:36:39 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:36:40 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 10:38:04 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:38:05 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:38:05 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:38:06 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:38:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:38:06 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:38:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:38:06 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:38:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:38:07 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:38:07 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:38:07 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:38:07 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:38:08 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:38:08 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:38:08 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:38:08 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:38:09 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:38:09 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:38:09 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:38:09 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:38:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:38:10 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 10:38:10 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:38:10 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:38:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:38:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:38:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:38:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:38:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:38:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:38:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:38:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:38:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:38:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:38:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:38:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:38:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:38:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:38:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:38:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:38:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:38:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:38:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:38:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:38:15 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 10:38:15 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:38:15 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:38:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:38:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:38:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:38:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:38:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:38:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:38:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:38:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:38:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:38:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:38:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:38:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:38:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:38:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:38:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:38:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:38:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:38:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:38:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:38:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:41:08 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 10:41:08 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 10:41:08 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 10:41:08 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 10:41:08 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:41:09 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:41:09 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 10:41:09 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:41:10 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:41:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:41:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:41:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:41:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:41:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:41:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:41:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:41:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:41:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:41:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:41:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:41:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:41:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:41:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:41:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:41:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:41:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:41:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:41:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:41:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:41:14 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 10:41:14 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:41:15 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:41:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:41:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:41:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:41:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:41:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:41:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:41:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:41:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:41:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:41:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:41:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:41:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:41:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:41:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:41:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:41:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:41:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:41:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:41:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 10:41:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:41:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 10:41:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 10:41:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 10:41:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:41:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 10:41:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 10:41:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 10:41:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 10:41:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 10:41:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 10:41:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 10:41:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 10:41:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 10:41:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 10:41:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 10:41:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 10:41:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 11:46:59 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 11:46:59 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 11:46:59 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 11:46:59 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 11:46:59 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:47:00 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:47:00 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 11:47:00 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:47:01 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:47:01 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 11:47:01 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 11:47:01 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:47:02 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:47:02 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 11:47:02 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 11:47:02 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:47:03 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:47:03 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 11:47:03 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 11:47:03 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 11:47:03 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 11:47:03 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 11:47:04 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 11:47:04 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 11:47:04 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 11:47:04 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 11:47:05 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 11:47:05 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 11:47:05 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 11:47:05 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 11:47:05 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:47:06 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:47:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 11:47:06 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 11:47:06 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:47:07 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:47:07 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 11:47:07 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 11:47:07 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:47:08 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:47:08 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 11:47:08 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 11:47:08 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 11:47:09 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 11:47:09 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 11:47:09 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 11:47:09 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 11:47:09 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 11:47:09 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 11:47:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 11:47:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 11:47:10 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 11:47:10 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 11:47:10 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:47:11 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:47:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 11:47:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 11:47:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:47:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:47:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 11:47:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 11:47:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:47:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:47:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 11:47:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 11:47:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 11:47:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 11:47:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 11:47:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 11:47:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 11:47:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 11:47:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 11:47:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 11:47:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 11:47:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 11:52:09 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-02-20 11:52:09 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: deep-mm
+2026-02-20 11:52:09 | src.verification.github_agent | INFO | verify_user_exists:97 | GitHub user verified: deep-mm
+2026-02-20 11:52:09 | src.verification.github_agent | INFO | verify_project_claims:235 | Verifying 4 project claims for deep-mm
+2026-02-20 11:52:09 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:52:10 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:52:10 | src.verification.github_agent | INFO | verify_project_claims:280 | Project verification complete: 0/4 matched
+2026-02-20 11:52:10 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:52:10 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:52:10 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 11:52:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 11:52:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:52:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:52:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 11:52:11 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 11:52:11 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:52:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:52:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 11:52:12 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 11:52:12 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 11:52:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 11:52:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 11:52:13 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 11:52:13 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 11:52:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 11:52:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 11:52:14 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 11:52:14 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 11:52:15 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 11:52:15 | src.verification.github_agent | INFO | verify_tech_stack:185 | Verifying tech stack for deep-mm: ['C#', 'Java', 'Python', 'Ruby', 'Javascript', 'SQL', 'Angular', 'React', 'Android (XML, Java)', 'React-Native', 'Ruby on Rails', 'Django', 'Azure', 'AWS', 'Firebase', 'Azure-DevOps', 'GitHub Actions', 'Terraform', 'ARM-Templates', 'Ansible', 'Kubernetes']
+2026-02-20 11:52:15 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:52:15 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:52:15 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 11:52:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 11:52:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:52:16 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:52:16 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 11:52:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 11:52:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:52:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:52:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 11:52:17 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 11:52:17 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 11:52:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 11:52:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 11:52:18 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 11:52:18 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 11:52:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 11:52:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 11:52:19 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 11:52:19 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 11:52:20 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-02-20 11:52:20 | src.verification.github_agent | INFO | verify_tech_stack:230 | Tech verification complete: 9/21 verified
+2026-02-20 11:52:20 | src.verification.github_agent | INFO | get_repositories:123 | Fetching top 10 repositories for: deep-mm
+2026-02-20 11:52:20 | src.verification.github_agent | INFO | get_repositories:132 | Found 10 repositories for deep-mm (limited to 10)
+2026-02-20 11:52:20 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/About-Me
+2026-02-20 11:52:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/About-Me
+2026-02-20 11:52:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:52:21 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/PasswordManager-FrontEnd
+2026-02-20 11:52:21 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/myExpressApp
+2026-02-20 11:52:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 3 languages in deep-mm/myExpressApp
+2026-02-20 11:52:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:52:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 18 languages in deep-mm/Auto-GPT-Job-Applications
+2026-02-20 11:52:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cis3990-24spring
+2026-02-20 11:52:22 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cis3990-24spring
+2026-02-20 11:52:22 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cpsc477
+2026-02-20 11:52:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/cpsc477
+2026-02-20 11:52:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/401-Deep-Learning
+2026-02-20 11:52:23 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 2 languages in deep-mm/401-Deep-Learning
+2026-02-20 11:52:23 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/lse-my457.github.io
+2026-02-20 11:52:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 1 languages in deep-mm/lse-my457.github.io
+2026-02-20 11:52:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/cs181-web
+2026-02-20 11:52:24 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 5 languages in deep-mm/cs181-web
+2026-02-20 11:52:24 | src.verification.github_agent | INFO | get_repo_languages:156 | Fetching languages for: deep-mm/pol330-spring24
+2026-02-20 11:52:25 | src.verification.github_agent | INFO | get_repo_languages:164 | Found 4 languages in deep-mm/pol330-spring24
+2026-08-09 13:20:59 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-08-09 13:20:59 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: nishita-502
+2026-08-09 13:20:59 | src.verification.github_agent | ERROR | verify_user_exists:114 | GitHub API error: 401
+2026-08-09 13:21:29 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-08-09 13:21:29 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: nishita-502
+2026-08-09 13:21:30 | src.verification.github_agent | ERROR | verify_user_exists:114 | GitHub API error: 401
+2026-08-09 13:35:26 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-08-09 13:35:26 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: nishita-502
+2026-08-09 13:35:26 | src.verification.github_agent | ERROR | verify_user_exists:114 | GitHub API error: 401
+2026-08-10 10:03:51 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-08-10 10:03:51 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: nishita-502
+2026-08-10 10:03:51 | src.verification.github_agent | ERROR | verify_user_exists:114 | GitHub API error: 401
+2026-08-10 12:49:50 | src.verification.github_agent | INFO | __init__:37 | GitHub Agent initialized with personal access token
+2026-08-10 12:49:50 | src.verification.github_agent | INFO | verify_user_exists:89 | Verifying GitHub user: nishita-502
+2026-08-10 12:49:51 | src.verification.github_agent | ERROR | verify_user_exists:114 | GitHub API error: 401
+2026-08-10 14:02:01 | src.verification.github_agent | INFO | __init__:42 | GitHub Agent initialized with personal access token
+2026-08-10 14:02:01 | src.verification.github_agent | INFO | verify_user_exists:101 | Verifying GitHub user: nishita-502 -> nishita-502

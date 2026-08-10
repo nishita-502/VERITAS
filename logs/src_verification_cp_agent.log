@@ -1,0 +1,128 @@
+2026-02-19 17:36:05 | src.verification.cp_agent | INFO | __init__:62 | CPAgentReal initialized with real API integration
+2026-02-19 17:36:05 | src.verification.cp_agent | INFO | verify_all_platforms:410 | Starting competitive programming verification
+2026-02-19 17:36:05 | src.verification.cp_agent | INFO | extract_usernames:112 | Extracting competitive programming usernames from resume
+2026-02-19 17:36:05 | src.verification.cp_agent | INFO | verify_all_platforms:418 | No competitive programming usernames found in resume
+2026-02-19 17:41:09 | src.verification.cp_agent | INFO | __init__:62 | CPAgentReal initialized with real API integration
+2026-02-19 17:41:09 | src.verification.cp_agent | INFO | verify_all_platforms:524 | Starting competitive programming verification
+2026-02-19 17:41:09 | src.verification.cp_agent | INFO | extract_usernames:114 | Extracting competitive programming usernames from resume
+2026-02-19 17:41:09 | src.verification.cp_agent | WARNING | extract_usernames:177 | No competitive programming usernames found in resume
+2026-02-19 17:41:09 | src.verification.cp_agent | INFO | extract_claimed_problems:185 | Extracting claimed problem counts from resume
+2026-02-19 17:41:09 | src.verification.cp_agent | INFO | verify_all_platforms:536 | No competitive programming usernames found in resume
+2026-02-19 17:50:38 | src.verification.cp_agent | INFO | __init__:78 | CPAgentReal initialized with real API integration
+2026-02-19 17:50:38 | src.verification.cp_agent | INFO | verify_all_platforms:498 | Starting competitive programming verification
+2026-02-19 17:50:38 | src.verification.cp_agent | INFO | extract_usernames:130 | Extracting competitive programming usernames from resume
+2026-02-19 17:50:38 | src.verification.cp_agent | WARNING | extract_usernames:151 | No competitive programming usernames found in resume
+2026-02-19 17:50:38 | src.verification.cp_agent | INFO | extract_claimed_problems:159 | Extracting claimed problem counts from resume
+2026-02-19 17:50:38 | src.verification.cp_agent | INFO | verify_all_platforms:510 | No competitive programming usernames found in resume
+2026-02-19 17:55:38 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-19 17:55:38 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-19 17:55:38 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-19 17:55:38 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-19 17:55:38 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-19 17:55:38 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-19 17:55:38 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 09:34:29 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 09:34:29 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 09:34:29 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 09:34:29 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 09:34:29 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 09:34:29 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 09:34:29 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 09:45:08 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 09:45:26 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 09:45:26 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 09:45:26 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 09:45:26 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 09:45:26 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 09:45:26 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 10:29:11 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 10:29:26 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 10:29:26 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 10:29:26 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 10:29:26 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 10:29:26 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 10:29:26 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 10:33:51 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 10:34:07 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 10:34:07 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 10:34:07 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 10:34:07 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 10:34:07 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 10:34:07 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 10:36:24 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 10:36:40 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 10:36:40 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 10:36:40 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 10:36:40 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 10:36:40 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 10:36:40 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 10:38:04 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 10:38:20 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 10:38:20 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 10:38:20 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 10:38:20 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 10:38:20 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 10:38:20 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 10:41:08 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 10:41:25 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 10:41:25 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 10:41:25 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 10:41:25 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 10:41:25 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 10:41:25 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 11:46:59 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 11:47:15 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 11:47:15 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 11:47:16 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 11:47:16 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 11:47:16 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 11:47:16 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-02-20 11:52:09 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-02-20 11:52:25 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-02-20 11:52:25 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-02-20 11:52:25 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-02-20 11:52:25 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-02-20 11:52:25 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-02-20 11:52:25 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-08-09 13:20:59 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-08-09 13:20:59 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-08-09 13:20:59 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-08-09 13:20:59 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-08-09 13:20:59 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-08-09 13:20:59 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-08-09 13:20:59 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-08-09 13:21:29 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-08-09 13:21:30 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-08-09 13:21:30 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-08-09 13:21:30 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-08-09 13:21:30 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-08-09 13:21:30 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-08-09 13:21:30 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-08-09 13:35:26 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-08-09 13:35:26 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-08-09 13:35:26 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-08-09 13:35:26 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-08-09 13:35:26 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-08-09 13:35:26 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-08-09 13:35:26 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-08-10 10:03:51 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-08-10 10:03:51 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-08-10 10:03:51 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-08-10 10:03:51 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-08-10 10:03:51 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-08-10 10:03:51 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-08-10 10:03:51 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-08-10 12:49:50 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-08-10 12:49:51 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-08-10 12:49:51 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-08-10 12:49:51 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-08-10 12:49:51 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-08-10 12:49:51 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-08-10 12:49:51 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume
+2026-08-10 14:02:01 | src.verification.cp_agent | INFO | __init__:90 | CPAgentReal initialized with real API integration
+2026-08-10 14:02:01 | src.verification.cp_agent | INFO | verify_all_platforms:506 | Starting competitive programming verification
+2026-08-10 14:02:01 | src.verification.cp_agent | INFO | extract_usernames:141 | Extracting competitive programming usernames from resume
+2026-08-10 14:02:01 | src.verification.cp_agent | WARNING | extract_usernames:177 | ❌ No competitive programming usernames found in resume
+2026-08-10 14:02:01 | src.verification.cp_agent | INFO | extract_claimed_problems:188 | Extracting claimed problem counts from resume
+2026-08-10 14:02:01 | src.verification.cp_agent | INFO | extract_claimed_problems:217 | No claimed problem counts found in resume
+2026-08-10 14:02:01 | src.verification.cp_agent | INFO | verify_all_platforms:518 | No competitive programming usernames found in resume

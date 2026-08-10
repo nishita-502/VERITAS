@@ -1,34 +1,30 @@
 """Scoring utilities"""
 from typing import List, Dict, Any
 
+
 def generate_red_flag_report(verification_results: Dict[str, Any]) -> List[Dict[str, str]]:
-    """Generate comprehensive red flag report"""
-    
+    """Generate comprehensive red flag report."""
+
     red_flags = []
-    
-    # Extract red flags from tech consistency
+
     tech_consistency = verification_results.get("tech_consistency", {})
     if tech_consistency:
         red_flags.extend(tech_consistency.get("red_flags", []))
-    
-    # Extract red flags from verification
-    github_results = verification_results.get("github_verification", {})
-    if github_results and not github_results.get("user_profile", {}).get("exists"):
-        red_flags.append({
-            "type": "missing_github",
-            "severity": "high",
-            "description": "GitHub username provided but profile not found",
-        })
-    
-    kaggle_results = verification_results.get("kaggle_verification", {})
-    if kaggle_results and not kaggle_results.get("user_profile", {}).get("exists"):
-        red_flags.append({
-            "type": "missing_kaggle",
-            "severity": "high",
-            "description": "Kaggle username provided but profile not found",
-        })
-    
-    return red_flags
+
+    direct_flags = verification_results.get("red_flags", [])
+    if direct_flags:
+        red_flags.extend(direct_flags)
+
+    deduped = []
+    seen = set()
+    for flag in red_flags:
+        key = (flag.get("type"), flag.get("description"))
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(flag)
+
+    return deduped
 
 
 def generate_executive_summary(

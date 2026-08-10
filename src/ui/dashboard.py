@@ -174,7 +174,7 @@ def render_verification_dashboard_tab(final_report):
     
     with col2:
         summary = trust_report.get("summary", {})
-        st.markdown(f"<div class='metric-card'><h3>{summary.get('verified', 0)}</h3><p>Verified Claims</p></div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='metric-card'><h3>{summary.get('self_reported', 0)}</h3><p>Self-Reported Claims</p></div>", unsafe_allow_html=True)
     
     with col3:
         st.markdown(f"<div class='metric-card'><h3>{len(final_report.get('red_flags', []))}</h3><p>Red Flags</p></div>", unsafe_allow_html=True)
@@ -192,8 +192,8 @@ def render_verification_dashboard_tab(final_report):
         verification_data = {
             "Verified": percentages.get("verified", 0),
             "Partially Verified": percentages.get("partially_verified", 0),
-            "Unverified": percentages.get("unverified", 0),
-            "Flagged": percentages.get("flagged", 0),
+            "Self-Reported": percentages.get("self_reported", 0),
+            "Contradicted": percentages.get("contradicted", 0),
         }
         
         df = pd.DataFrame(list(verification_data.items()), columns=["Status", "Percentage"])
@@ -229,8 +229,11 @@ def render_verification_dashboard_tab(final_report):
         elif status == "partially_verified":
             badge = "⚠️ PARTIAL"
             bg_color = "#fff3cd"
+        elif status in {"self_reported", "unverified"}:
+            badge = "ℹ️ SELF-REPORTED"
+            bg_color = "#e7f1ff"
         else:
-            badge = "❌ UNVERIFIED"
+            badge = "🚩 CONTRADICTED"
             bg_color = "#f8d7da"
         
         st.markdown(f"""
@@ -243,7 +246,7 @@ def render_verification_dashboard_tab(final_report):
 
 
 def render_ats_match_tab(final_report):
-    """Render ATS Match & JD Comparison Tab"""
+    """Render ATS Match & JD Comparison Tab with TRANSPARENT scoring"""
     
     st.subheader("🎯 ATS Score & JD Matching")
     
@@ -254,52 +257,304 @@ def render_ats_match_tab(final_report):
         st.info("Upload a Job Description to see ATS matching analysis.")
         return
     
-    # Main ATS Score
+    # ========== MAIN ATS SCORE ==========
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col1:
-        st.metric("ATS Score", f"{ats_report.get('ats_score', 0)}/100")
+        score = ats_report.get('ats_score', 0)
+        st.markdown(f"<h1 style='text-align: center; color: #007BFF;'>{score}/100</h1>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center;'><strong>ATS Score</strong></p>", unsafe_allow_html=True)
     
     with col2:
         status = ats_report.get("ats_status", "Unknown")
         st.info(f"**Status:** {status}")
+        
+        note = ats_report.get("note", "")
+        if note:
+            st.caption(f"ℹ️ {note}")
     
     with col3:
-        st.metric("Recommendation", "Review" if ats_report.get('ats_score', 0) < 60 else "Proceed")
+        if score >= 80:
+            rec = "🟢 Strong"
+        elif score >= 60:
+            rec = "🟡 Review"
+        else:
+            rec = "🔴 Caution"
+        
+        st.markdown(f"<h4 style='text-align: center;'>{rec}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center;'><strong>Recommendation</strong></p>", unsafe_allow_html=True)
     
-    # ATS Breakdown
+    # ========== ATS CRITERIA PANEL (VERY IMPORTANT) ==========
     st.write("---")
-    st.subheader("📊 ATS Score Breakdown")
+    st.subheader("📋 ATS Scoring Criteria & Weights")
+    
+    st.markdown("""
+    This panel shows EXACTLY how the ATS score is calculated:
+    """)
+    
+    # Create a visual criteria panel
+    col_left, col_right = st.columns(2)
+    
+    with col_left:
+        st.markdown("### Base Alignment: 100% of base score")
+        st.info("""
+        **JD Requirement Alignment** (70% of base score)
+        - Uses structured JD requirements when available
+        - Falls back to text skill extraction only when needed
+        
+        **Resume Completeness** (30% of base score)
+        - Evaluates contact info, education, experience, and skills
+        - Partial credit is awarded for each section present
+        
+        **Project Depth**
+        - Informational only
+        - Helps explain resume strength, but does not directly score
+        """)
+    
+    with col_right:
+        st.markdown("### External Evidence: Positive Boost")
+        st.info("""
+        **GitHub Verification**
+        - Profile existence, targeted project search, and language footprint
+        
+        **Kaggle Verification**
+        - Profile existence and activity signals
+        
+        **Competitive Programming**
+        - Verified profile evidence from DSA platforms
+
+        External evidence increases the score; lack of evidence does not reduce it.
+        """)
+    
+    # ========== DETAILED BREAKDOWN ==========
+    st.write("---")
+    st.subheader("📊 Detailed Score Breakdown")
     
     breakdown = ats_report.get("breakdown", {})
     
-    col_a, col_b, col_c, col_d = st.columns(4)
+    # Resume Strength Section
+    if "base_alignment" in breakdown:
+        with st.expander("💪 Base Alignment Section", expanded=True):
+            rs = breakdown["base_alignment"]
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.metric("Base Alignment Contribution", f"{rs.get('contribution', 0):.1f} points")
+            
+            with col2:
+                st.metric("Base Alignment Weight", "100% of base score")
+            
+            st.write("---")
+            
+            # JD Skill Match
+            jd_match = rs.get("jd_requirement_alignment", {})
+            st.write("#### 🔧 JD Requirement Alignment (70% of base)")
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                st.metric("Match %", f"{jd_match.get('percentage', 0)}%")
+            with col_b:
+                st.metric("Weight", "70%")
+            with col_c:
+                st.metric("Contribution", f"{jd_match.get('weighted_contribution', 0):.1f}")
+            
+            details = jd_match.get("details", {})
+            if details:
+                st.write(f"**Matched Skills:** {details.get('match_count', 0)}/{details.get('total_jd_skills', 0)}")
+                if details.get('matched_skills'):
+                    st.write(f"✅ Found: {', '.join(details.get('matched_skills', [])[:5])}")
+                if details.get('missing_skills'):
+                    st.write(f"❌ Missing: {', '.join(details.get('missing_skills', [])[:5])}")
+            
+            st.write("\n")
+            
+            # Resume Completeness
+            completeness = rs.get("resume_completeness", {})
+            st.write("#### 📝 Resume Completeness (30% of base)")
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                st.metric("Completeness %", f"{completeness.get('percentage', 0)}%")
+            with col_b:
+                st.metric("Weight", "30%")
+            with col_c:
+                st.metric("Contribution", f"{completeness.get('weighted_contribution', 0):.1f}")
+            
+            comp_details = completeness.get("details", {})
+            st.caption(f"Score: {comp_details.get('percentage', 0)}/100")
+            
+            st.write("\n")
+            
+            # Project Depth
+            project_depth = rs.get("project_depth", {})
+            st.write("#### 🚀 Project Depth (informational)")
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                st.metric("Depth %", f"{project_depth.get('percentage', 0)}%")
+            with col_b:
+                st.metric("Weight", "0%")
+            with col_c:
+                st.metric("Contribution", f"{project_depth.get('weighted_contribution', 0):.1f}")
+            
+            proj_details = project_depth.get("details", {})
+            if proj_details:
+                st.write(f"**Total Projects:** {proj_details.get('total_projects', 0)}")
     
-    metrics = [
-        ("jd_skill_match", "JD Skill Match", col_a),
-        ("verified_claims", "Verified Claims", col_b),
-        ("resume_completeness", "Completeness", col_c),
-        ("timeline_consistency", "Timeline", col_d),
-    ]
+    # External Verification Section
+    if "external_verification" in breakdown:
+        with st.expander("🔗 External Evidence Section", expanded=True):
+            ev = breakdown["external_verification"]
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.metric("Boost Points", f"{ev.get('boost_points', 0):.1f}")
+            
+            with col2:
+                st.metric("Evidence Strength", f"{ev.get('evidence_strength', 0)}%")
+            
+            st.write("---")
+            
+            st.write("#### Profile & Platform Verification")
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                st.metric("Boost Multiplier", f"{ev.get('boost_multiplier', 0):.2f}")
+            with col_b:
+                st.metric("Weight", "0%")
+            with col_c:
+                st.metric("Contribution", f"{ev.get('boost_points', 0):.1f}")
+            
+            details = ev.get("details", {})
+            if details:
+                st.write(f"**GitHub Verification Score:** {details.get('github_verification', 0)} points")
+                st.write(f"**Kaggle Verification Score:** {details.get('kaggle_verification', 0)} points")
+                st.write(f"**Competitive Programming Score:** {details.get('competitive_programming', 0)} points")
+                st.write(f"**Evidence Strength:** {details.get('evidence_strength', 0)}/100")
     
-    for key, label, col in metrics:
-        if key in breakdown:
-            data = breakdown[key]
-            with col:
-                pct = data.get("percentage", 0)
-                weight = data.get("weight", 0)
-                contribution = data.get("weighted_contribution", 0)
-                
-                st.metric(label, f"{pct}%")
-                st.caption(f"Weight: {weight * 100:.0f}%")
-                st.caption(f"Contribution: {contribution:.1f}")
-    
-    # Detailed Breakdown
+    # ========== SKILL VERIFICATION BREAKDOWN ==========
     st.write("---")
-    st.write("#### Skill Match Details")
+    st.subheader("💬 Individual Skill Verification Status")
     
-    if "jd_skill_match" in breakdown:
-        skill_data = breakdown["jd_skill_match"]["details"]
+    st.markdown("""
+    For HR transparency: Each skill shows verification status with evidence
+    """)
+    
+    # Get skill details from breakdown
+    jd_match_details = breakdown.get("base_alignment", {}).get("jd_requirement_alignment", {}).get("details", {})
+    matched_skills = jd_match_details.get("matched_skills", [])
+    missing_skills = jd_match_details.get("missing_skills", [])
+    
+    if matched_skills:
+        st.markdown("#### ✅ Verified Skills")
+        for skill in matched_skills[:10]:
+            st.write(f"🟢 **{skill}**")
+    
+    if missing_skills:
+        st.markdown("#### ❌ Missing Skills (not found in resume)")
+        for skill in missing_skills[:5]:
+            st.write(f"🔴 **{skill}** - _Candidate does not have this skill_")
+    
+    # ========== COMPETITIVE PROGRAMMING VERIFICATION ==========
+    st.write("---")
+    st.subheader("🏆 Competitive Programming Verification (DSA)")
+    
+    verification_results = final_report.get("verification_results", {})
+    dsa_verification = verification_results.get("competitive_programming", {})
+    
+    if dsa_verification:
+        st.markdown("""
+        Verification of candidates' competitive programming profiles helps validate 
+        Data Structures & Algorithms expertise.
+        """)
+        
+        platforms_verified = dsa_verification.get("platforms_verified", {})
+        
+        if platforms_verified:
+            col1, col2, col3 = st.columns(3)
+            
+            with col1:
+                st.metric("DSA Score", f"{dsa_verification.get('dsa_score', 0):.0f}/100")
+            
+            with col2:
+                st.metric("Verified Platforms", f"{dsa_verification.get('verified_count', 0)}")
+            
+            with col3:
+                st.metric("Total Platforms", f"{dsa_verification.get('total_platforms', 0)}")
+            
+            st.write("\n")
+            
+            # LeetCode
+            if "leetcode" in platforms_verified:
+                lc = platforms_verified["leetcode"]
+                if lc.get("verified"):
+                    st.markdown("#### ✅ LeetCode Verified")
+                    col_lc1, col_lc2, col_lc3 = st.columns(3)
+                    with col_lc1:
+                        st.metric("Problems Solved", lc.get("problems_solved", 0))
+                    with col_lc2:
+                        st.metric("Total Problems", lc.get("total_problems", 0))
+                    with col_lc3:
+                        st.metric("Ranking", lc.get("ranking", "N/A"))
+                else:
+                    st.markdown("#### ❌ LeetCode Not Verified")
+                    st.write("_No LeetCode profile found or not publicly visible_")
+            
+            # Codeforces
+            if "codeforces" in platforms_verified:
+                cf = platforms_verified["codeforces"]
+                if cf.get("verified"):
+                    st.markdown("#### ✅ Codeforces Verified")
+                    col_cf1, col_cf2, col_cf3 = st.columns(3)
+                    with col_cf1:
+                        st.metric("Rating", cf.get("rating", 0))
+                    with col_cf2:
+                        st.metric("Max Rating", cf.get("max_rating", 0))
+                    with col_cf3:
+                        st.metric("Contributions", cf.get("contributions", 0))
+                else:
+                    st.markdown("#### ❌ Codeforces Not Verified")
+                    st.write("_No Codeforces profile found_")
+            
+            # CodeChef
+            if "codechef" in platforms_verified:
+                cc = platforms_verified["codechef"]
+                if cc.get("verified"):
+                    st.markdown("#### ✅ CodeChef Verified")
+                    col_cc1, col_cc2 = st.columns(2)
+                    with col_cc1:
+                        st.metric("Rating", cc.get("rating", 0))
+                    with col_cc2:
+                        st.metric("Problems Solved", cc.get("problems_solved", 0))
+                else:
+                    st.markdown("#### ❌ CodeChef Not Verified")
+                    st.write("_No CodeChef profile found_")
+            
+            # HackerRank
+            if "hackerrank" in platforms_verified:
+                hr = platforms_verified["hackerrank"]
+                if hr.get("verified"):
+                    st.markdown("#### ✅ HackerRank Verified")
+                    col_hr1, col_hr2 = st.columns(2)
+                    with col_hr1:
+                        st.metric("Badges Earned", hr.get("badge_count", 0))
+                    with col_hr2:
+                        st.metric("Problems Solved", hr.get("problem_solving_count", 0))
+                else:
+                    st.markdown("#### ❌ HackerRank Not Verified")
+                    st.write("_No HackerRank profile found_")
+        else:
+            st.info("ℹ️ No competitive programming profiles found in resume")
+    
+    # ========== FORMULA DISPLAY ==========
+    st.write("---")
+    st.write("#### 📐 Scoring Formula Used")
+    formula = ats_report.get("formula", "Not available")
+    st.code(formula, language="text")
+    
+    st.info("""
+    **Key Principle:** External verification strengthens the score, not destroys it.
+    Absence of GitHub proof ≠ proof of dishonesty.
+    """)
+
+    if "base_alignment" in breakdown:
+        skill_data = breakdown["base_alignment"]["jd_requirement_alignment"]["details"]
         
         col_x, col_y = st.columns(2)
         
@@ -368,6 +623,131 @@ def render_red_flags_analysis(final_report):
             st.write(description)
             flag_type = flag.get("type", "unknown")
             st.caption(f"Type: {flag_type}")
+
+
+def render_github_tech_verification_tab(final_report):
+    """Render GitHub & Tech Consistency Verification Tab"""
+    
+    st.subheader("🔗 GitHub & Technology Verification")
+    
+    verification_results = final_report.get("verification_results", {})
+    github_verification = verification_results.get("github_verification")
+    tech_consistency = verification_results.get("tech_consistency")
+    
+    if not github_verification:
+        st.info("ℹ️ No GitHub username provided in resume")
+        return
+    
+    # GitHub Profile Status
+    col1, col2, col3 = st.columns(3)
+    
+    username = github_verification.get("username", "Unknown")
+    
+    with col1:
+        if github_verification.get("user_profile", {}).get("exists"):
+            st.success(f"✅ GitHub: @{username}")
+        else:
+            st.error(f"❌ GitHub: @{username} not found")
+    
+    with col2:
+        public_repos = github_verification.get("user_profile", {}).get("public_repos", 0)
+        st.metric("Public Repos", public_repos)
+    
+    with col3:
+        followers = github_verification.get("user_profile", {}).get("followers", 0)
+        st.metric("Followers", followers)
+    
+    # Tech Consistency
+    st.write("---")
+    st.subheader("⚙️ Technology Consistency Analysis")
+    
+    if tech_consistency:
+        consistency_report = tech_consistency.get("consistency_report", {})
+        consistency_score = consistency_report.get("consistency_score", 0) * 100
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.metric("Consistency Score", f"{consistency_score:.0f}%")
+        
+        with col2:
+            verified_count = len(consistency_report.get("verified_skills", []))
+            st.metric("Verified Skills", verified_count)
+        
+        with col3:
+            partial_count = len(consistency_report.get("partially_verified_skills", []))
+            st.metric("Partially Verified", partial_count)
+        
+        st.write("\n")
+        
+        # Verified Skills with Ecosystem Matching
+        st.write("#### ✅ Verified Skills (Found in GitHub)")
+        verified_skills = consistency_report.get("verified_skills", [])
+        if verified_skills:
+            for skill_info in verified_skills:
+                skill = skill_info.get("skill", "")
+                found_in = skill_info.get("found_in", "")
+                match_type = skill_info.get("match_type", "direct")
+                matched_with = skill_info.get("matched_with", "")
+                
+                if match_type == "semantic" and matched_with:
+                    st.write(f"🟢 **{skill}** → Found as **{matched_with}** (semantic tech group)")
+                else:
+                    st.write(f"🟢 **{skill}** ✓ Verified")
+        else:
+            st.caption("No verified skills found")
+        
+        st.write("\n")
+        
+        # Partially Verified
+        st.write("#### 🟡 Partially Verified Skills (Found in Projects/Work)")
+        partial_skills = consistency_report.get("partially_verified_skills", [])
+        if partial_skills:
+            for skill_info in partial_skills:
+                skill = skill_info.get("skill", "")
+                found_in = skill_info.get("found_in", "")
+                st.write(f"🟡 **{skill}** - Found in {found_in}")
+        else:
+            st.caption("No partially verified skills")
+        
+        st.write("\n")
+        
+        # Unverified Skills
+        st.write("#### 🔴 Self-Reported Skills (Not externally confirmed)")
+        unverified_skills = consistency_report.get("unverified_skills", [])
+        if unverified_skills:
+            st.write("These skills are currently self-reported and not externally confirmed:")
+            for skill in unverified_skills[:10]:
+                st.write(f"🔴 **{skill}**")
+            if len(unverified_skills) > 10:
+                st.write(f"... and {len(unverified_skills) - 10} more")
+        else:
+            st.success("✅ All claimed skills have external support!")
+        
+        st.write("\n")
+        
+        # Key Messages
+        st.write("---")
+        st.write("#### 📊 What This Means")
+        
+        if consistency_score >= 80:
+            st.success("""
+            🟢 **Strong Tech Stack Consistency**
+            - Candidate's claimed skills strongly match GitHub portfolio
+            - High confidence in technical expertise
+            """)
+        elif consistency_score >= 60:
+            st.warning("""
+            🟡 **Moderate Tech Stack Consistency**
+            - Most claimed skills verified, but some gaps
+            - Recommend verifying unmatched skills in interview
+            """)
+        else:
+            st.error("""
+            🔴 **Low Tech Stack Consistency**
+            - Limited overlap between claims and external verification
+            - Recommend detailed technical interview
+            """)
 
 
 def run_dashboard():
@@ -468,8 +848,9 @@ def run_dashboard():
     if "final_report" in st.session_state:
         final_report = st.session_state.final_report
         
-        tab1, tab2, tab3, tab4 = st.tabs([
+        tab1, tab2, tab3, tab4, tab5 = st.tabs([
             "📋 Resume Analysis",
+            "🔗 GitHub & Tech Verification",
             "🔍 Verification Dashboard",
             "🎯 ATS Match & JD",
             "⚠️ Red Flags"
@@ -479,12 +860,15 @@ def run_dashboard():
             render_resume_analysis_tab(final_report)
         
         with tab2:
-            render_verification_dashboard_tab(final_report)
+            render_github_tech_verification_tab(final_report)
         
         with tab3:
-            render_ats_match_tab(final_report)
+            render_verification_dashboard_tab(final_report)
         
         with tab4:
+            render_ats_match_tab(final_report)
+        
+        with tab5:
             render_red_flags_analysis(final_report)
         
         # Executive Summary

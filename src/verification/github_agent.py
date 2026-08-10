@@ -1,104 +1,121 @@
 """
 GitHub Verification Agent
-Uses real GitHub REST API to verify claims with caching and rate limit optimization
+Uses real GitHub REST API to verify claims with caching and targeted repository search
 """
-import requests
+from __future__ import annotations
+
 import json
-import os
-from typing import Dict, Any, List, Optional
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+import requests
+
 from src.core.config import GITHUB_API_BASE, GITHUB_TOKEN, GITHUB_TIMEOUT
 from src.core.logging_config import get_logger
 
 logger = get_logger(__name__)
 
-# Configuration for API optimization
-MAX_REPOS = 10  # Only fetch top 10 most recent repos
-MAX_CONTRIBUTOR_REPOS = 2  # Only fetch contributors for top 2 repos
 CACHE_DIR = Path("cache")
 CACHE_EXPIRY_HOURS = 24
+MAX_SEARCH_RESULTS = 5
+
 
 class GitHubAgent:
-    """Verify GitHub claims using real API with caching and rate limit optimization"""
-    
+    """Verify GitHub claims using real API with caching and rate limit optimization."""
+
     def __init__(self):
-        self.base_url = GITHUB_API_BASE
-        self.headers = {
-            "Accept": "application/vnd.github.v3+json",
-            "User-Agent": "VERITAS-Resume-Verification",
-        }
-        
-        # Create cache directory if it doesn't exist
+        self.base_url = GITHUB_API_BASE.rstrip("/")
+        self.session = requests.Session()
+        self.session.headers.update(
+            {
+                "Accept": "application/vnd.github+json",
+                "User-Agent": "VERITAS-Resume-Verification",
+            }
+        )
+
         CACHE_DIR.mkdir(exist_ok=True)
-        
+
         if GITHUB_TOKEN:
-            self.headers["Authorization"] = f"token {GITHUB_TOKEN}"
+            self.session.headers["Authorization"] = f"token {GITHUB_TOKEN}"
             logger.info("GitHub Agent initialized with personal access token")
         else:
             logger.warning("GitHub Agent: No token provided, using public API (rate-limited)")
-    
-    def _get_cache_path(self, username: str) -> Path:
-        """Get cache file path for a GitHub user"""
-        return CACHE_DIR / f"github_{username}.json"
-    
-    def _load_cache(self, username: str) -> Optional[Dict[str, Any]]:
-        """Load cached GitHub data if valid"""
-        cache_path = self._get_cache_path(username)
-        
+
+    @staticmethod
+    def sanitize_github_username(username: Optional[str]) -> str:
+        """Normalize handles such as @user and https://github.com/user."""
+
+        if not username:
+            return ""
+
+        cleaned = username.strip()
+        cleaned = re.sub(r"(?i)^https?://(?:www\.)?github\.com/", "", cleaned)
+        cleaned = cleaned.split("?")[0].split("#")[0].rstrip("/")
+        cleaned = cleaned.lstrip("@").strip()
+        cleaned = cleaned.split("/")[0]
+        cleaned = re.sub(r"[^A-Za-z0-9_-]", "", cleaned)
+        return cleaned
+
+    def _get_cache_path(self, username: str, suffix: str) -> Path:
+        return CACHE_DIR / f"github_{username}_{suffix}.json"
+
+    def _load_cache(self, username: str, suffix: str) -> Optional[Dict[str, Any]]:
+        cache_path = self._get_cache_path(username, suffix)
         if not cache_path.exists():
             return None
-        
+
         try:
-            with open(cache_path, 'r') as f:
-                cache_data = json.load(f)
-            
-            # Check if cache is expired
+            with open(cache_path, "r", encoding="utf-8") as handle:
+                cache_data = json.load(handle)
+
             timestamp = datetime.fromisoformat(cache_data.get("timestamp", ""))
             if datetime.now() - timestamp > timedelta(hours=CACHE_EXPIRY_HOURS):
-                logger.info(f"Cache for {username} expired, will refresh")
                 return None
-            
-            logger.info(f"Loaded cached GitHub data for {username}")
-            return cache_data["data"]
-        
-        except Exception as e:
-            logger.warning(f"Error loading cache for {username}: {str(e)}")
+
+            return cache_data.get("data")
+        except Exception as exc:
+            logger.warning("Error loading cache for %s (%s): %s", username, suffix, exc)
             return None
-    
-    def _save_cache(self, username: str, data: Dict[str, Any]) -> None:
-        """Save GitHub data to cache"""
-        cache_path = self._get_cache_path(username)
-        
+
+    def _save_cache(self, username: str, suffix: str, data: Dict[str, Any]) -> None:
+        cache_path = self._get_cache_path(username, suffix)
         try:
-            cache_data = {
-                "timestamp": datetime.now().isoformat(),
-                "data": data
-            }
-            
-            with open(cache_path, 'w') as f:
-                json.dump(cache_data, f, indent=2)
-            
-            logger.info(f"Cached GitHub data for {username}")
-        
-        except Exception as e:
-            logger.warning(f"Error saving cache for {username}: {str(e)}")
-    
+            cache_data = {"timestamp": datetime.now().isoformat(), "data": data}
+            with open(cache_path, "w", encoding="utf-8") as handle:
+                json.dump(cache_data, handle, indent=2)
+        except Exception as exc:
+            logger.warning("Error saving cache for %s (%s): %s", username, suffix, exc)
+
+    def _get(self, path: str, *, params: Optional[Dict[str, Any]] = None) -> requests.Response:
+        response = self.session.get(f"{self.base_url}{path}", params=params, timeout=GITHUB_TIMEOUT)
+        if response.status_code == 403 and response.headers.get("X-RateLimit-Remaining") == "0":
+            logger.warning("GitHub API rate limit reached")
+        return response
+
     def verify_user_exists(self, username: str) -> Dict[str, Any]:
-        """Verify GitHub user exists and get profile info (with caching)"""
-        logger.info(f"Verifying GitHub user: {username}")
-        
+        """Verify GitHub user exists and get profile info."""
+
+        clean_username = self.sanitize_github_username(username)
+        logger.info("Verifying GitHub user: %s -> %s", username, clean_username)
+
+        if not clean_username:
+            return {"exists": False, "username": username, "clean_username": ""}
+
+        cached = self._load_cache(clean_username, "profile")
+        if cached:
+            return cached
+
         try:
-            url = f"{self.base_url}/users/{username}"
-            response = requests.get(url, headers=self.headers, timeout=GITHUB_TIMEOUT)
-            
+            response = self._get(f"/users/{clean_username}")
+
             if response.status_code == 200:
                 data = response.json()
-                logger.info(f"GitHub user verified: {username}")
-                
-                return {
+                result = {
                     "exists": True,
-                    "username": username,
+                    "username": clean_username,
+                    "clean_username": clean_username,
                     "name": data.get("name"),
                     "bio": data.get("bio"),
                     "location": data.get("location"),
@@ -106,208 +123,285 @@ class GitHubAgent:
                     "followers": data.get("followers", 0),
                     "created_at": data.get("created_at"),
                     "updated_at": data.get("updated_at"),
+                    "html_url": data.get("html_url"),
                 }
-            elif response.status_code == 404:
-                logger.warning(f"GitHub user not found: {username}")
-                return {"exists": False, "username": username}
-            else:
-                logger.error(f"GitHub API error: {response.status_code}")
-                return {"exists": None, "username": username, "error": response.status_code}
-        
-        except Exception as e:
-            logger.error(f"Error verifying GitHub user {username}: {str(e)}")
-            return {"exists": None, "username": username, "error": str(e)}
-    
-    def get_repositories(self, username: str) -> List[Dict[str, Any]]:
-        """Get top N recently updated repositories for a user (optimized for API rate limits)"""
-        logger.info(f"Fetching top {MAX_REPOS} repositories for: {username}")
-        
-        try:
-            # Use sort=pushed to get most recently updated repos, limit to MAX_REPOS
-            url = f"{self.base_url}/users/{username}/repos?per_page={MAX_REPOS}&sort=pushed&order=desc"
-            response = requests.get(url, headers=self.headers, timeout=GITHUB_TIMEOUT)
-            
-            if response.status_code == 200:
-                repos = response.json()
-                logger.info(f"Found {len(repos)} repositories for {username} (limited to {MAX_REPOS})")
-                
-                return [{
-                    "name": repo.get("name"),
-                    "url": repo.get("html_url"),
-                    "description": repo.get("description"),
-                    "language": repo.get("language"),
-                    "stargazers_count": repo.get("stargazers_count", 0),
-                    "forks_count": repo.get("forks_count", 0),
-                    "size": repo.get("size", 0),
-                    "created_at": repo.get("created_at"),
-                    "updated_at": repo.get("updated_at"),
-                    "pushed_at": repo.get("pushed_at"),
-                } for repo in repos]
-            else:
-                logger.error(f"Error fetching repos: {response.status_code}")
-                return []
-        
-        except Exception as e:
-            logger.error(f"Error fetching repositories for {username}: {str(e)}")
+                self._save_cache(clean_username, "profile", result)
+                return result
+
+            if response.status_code == 404:
+                return {"exists": False, "username": clean_username, "clean_username": clean_username}
+
+            return {
+                "exists": None,
+                "username": clean_username,
+                "clean_username": clean_username,
+                "error": response.status_code,
+            }
+        except Exception as exc:
+            logger.error("Error verifying GitHub user %s: %s", clean_username, exc)
+            return {"exists": None, "username": clean_username, "clean_username": clean_username, "error": str(exc)}
+
+    def search_repositories(self, username: str, project_name: str, max_results: int = MAX_SEARCH_RESULTS) -> List[Dict[str, Any]]:
+        """Search repositories owned by a user for a specific project name."""
+
+        clean_username = self.sanitize_github_username(username)
+        clean_project = (project_name or "").strip()
+        if not clean_username or not clean_project:
             return []
-    
-    def get_repo_languages(self, username: str, repo_name: str) -> Dict[str, int]:
-        """Get programming languages used in a repository"""
-        logger.info(f"Fetching languages for: {username}/{repo_name}")
-        
+
+        query = f"user:{clean_username} {clean_project}"
         try:
-            url = f"{self.base_url}/repos/{username}/{repo_name}/languages"
-            response = requests.get(url, headers=self.headers, timeout=GITHUB_TIMEOUT)
-            
+            response = self._get(
+                "/search/repositories",
+                params={"q": query, "per_page": max_results, "sort": "updated", "order": "desc"},
+            )
+            if response.status_code != 200:
+                logger.warning("GitHub repository search failed for %s: %s", clean_project, response.status_code)
+                return []
+
+            payload = response.json()
+            items = payload.get("items", []) if isinstance(payload, dict) else []
+            return [
+                {
+                    "name": item.get("name"),
+                    "full_name": item.get("full_name"),
+                    "url": item.get("html_url"),
+                    "description": item.get("description"),
+                    "language": item.get("language"),
+                    "languages_url": item.get("languages_url"),
+                    "stargazers_count": item.get("stargazers_count", 0),
+                    "forks_count": item.get("forks_count", 0),
+                    "size": item.get("size", 0),
+                    "created_at": item.get("created_at"),
+                    "updated_at": item.get("updated_at"),
+                    "pushed_at": item.get("pushed_at"),
+                }
+                for item in items
+            ]
+        except Exception as exc:
+            logger.error("Error searching repositories for %s/%s: %s", clean_username, clean_project, exc)
+            return []
+
+    def get_repo_languages(self, repo_full_name: str) -> Dict[str, int]:
+        """Get programming languages used in a repository by full name."""
+
+        if not repo_full_name or "/" not in repo_full_name:
+            return {}
+
+        try:
+            response = self._get(f"/repos/{repo_full_name}/languages")
             if response.status_code == 200:
                 languages = response.json()
-                logger.info(f"Found {len(languages)} languages in {username}/{repo_name}")
-                return languages
-            else:
-                logger.error(f"Error fetching languages: {response.status_code}")
-                return {}
-        
-        except Exception as e:
-            logger.error(f"Error fetching languages: {str(e)}")
+                return languages if isinstance(languages, dict) else {}
             return {}
-    
+        except Exception as exc:
+            logger.error("Error fetching languages for %s: %s", repo_full_name, exc)
+            return {}
+
     def get_repo_commits(self, username: str, repo_name: str) -> List[Dict[str, Any]]:
-        """
-        DEPRECATED: Avoid expensive commit API calls.
-        Use repository metadata instead (size, updated_at, pushed_at).
-        Returns empty list to maintain interface compatibility.
-        """
-        logger.debug(f"Commit fetching disabled for rate limit optimization (was: {username}/{repo_name})")
+        """Commit fetching is disabled to avoid expensive API usage."""
+
+        logger.debug("Commit fetching disabled for rate limit optimization (was: %s/%s)", username, repo_name)
         return []
-    
-    def verify_tech_stack(self, username: str, claimed_skills: List[str]) -> Dict[str, Any]:
-        """Verify claimed technologies appear in user's repositories (optimized)"""
-        logger.info(f"Verifying tech stack for {username}: {claimed_skills}")
-        
-        repos = self.get_repositories(username)  # Already limited to MAX_REPOS
-        found_techs = {}
-        
-        # Only fetch languages for top MAX_REPOS (already limited)
-        for i, repo in enumerate(repos):
-            if i >= MAX_REPOS:
-                break
-            
-            languages = self.get_repo_languages(username, repo["name"])
-            for lang in languages:
-                if lang not in found_techs:
-                    found_techs[lang] = 0
-                found_techs[lang] += 1
-        
-        verified_skills = []
-        unverified_skills = []
-        
-        for skill in claimed_skills:
-            # Normalize skill names
-            skill_lower = skill.lower()
-            found = False
-            
-            for tech in found_techs:
-                if skill_lower in tech.lower() or tech.lower() in skill_lower:
-                    verified_skills.append({
-                        "claimed": skill,
-                        "found": tech,
-                        "count": found_techs[tech],
-                    })
-                    found = True
-                    break
-            
-            if not found:
-                unverified_skills.append(skill)
-        
-        result = {
-            "username": username,
-            "verified_skills": verified_skills,
-            "unverified_skills": unverified_skills,
-            "verification_rate": len(verified_skills) / len(claimed_skills) if claimed_skills else 0,
-            "all_found_technologies": found_techs,
-        }
-        
-        logger.info(f"Tech verification complete: {len(verified_skills)}/{len(claimed_skills)} verified")
-        return result
-    
+
+    @staticmethod
+    def _is_semantic_match(claimed: str, candidate: str) -> bool:
+        claimed_lower = claimed.lower().strip()
+        candidate_lower = candidate.lower().strip()
+        return claimed_lower == candidate_lower or claimed_lower in candidate_lower or candidate_lower in claimed_lower
+
+    def _best_repo_match(self, project: Dict[str, Any], repositories: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+        project_name = (project.get("name") or "").strip().lower()
+        project_description = (project.get("description") or "").strip().lower()
+        if not project_name:
+            return None
+
+        best_repo = None
+        best_score = 0.0
+        for repo in repositories:
+            repo_name = (repo.get("name") or "").lower()
+            description = (repo.get("description") or "").lower()
+            score = 0.0
+            if self._is_semantic_match(project_name, repo_name):
+                score += 0.7
+            if project_description and project_description[:30] and project_description[:30] in description:
+                score += 0.2
+            if any(token and token in repo_name for token in project_name.split()):
+                score += 0.1
+
+            if score > best_score:
+                best_score = score
+                best_repo = repo
+
+        if best_score >= 0.35:
+            return best_repo
+        return None
+
     def verify_project_claims(self, username: str, claimed_projects: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """Verify claimed projects exist on GitHub (optimized - no commit calls)"""
-        logger.info(f"Verifying {len(claimed_projects)} project claims for {username}")
-        
-        repos = self.get_repositories(username)  # Already limited to MAX_REPOS
-        repo_names = [r["name"].lower() for r in repos]
-        
-        verification_results = {
-            "username": username,
+        """Verify claimed projects using targeted search for each project name."""
+
+        clean_username = self.sanitize_github_username(username)
+        logger.info("Verifying %s project claims for %s", len(claimed_projects), clean_username)
+
+        profile = self.verify_user_exists(clean_username)
+        result = {
+            "username": clean_username,
+            "profile": profile,
             "total_claimed": len(claimed_projects),
-            "total_repos": len(repos),
             "matched_projects": [],
             "unmatched_projects": [],
+            "language_footprint": {},
+            "search_queries": [],
+            "match_rate": 0.0,
+            "verification_boost": 0.0,
         }
-        
-        for project in claimed_projects:
-            project_name = project.get("name", "").lower()
-            matched = False
-            
-            for repo in repos:
-                if project_name in repo["name"].lower() or repo["name"].lower() in project_name:
-                    # Found matching repo - use metadata instead of commit calls
-                    languages = self.get_repo_languages(username, repo["name"])
-                    
-                    verification_results["matched_projects"].append({
-                        "claimed_name": project.get("name"),
-                        "repo_name": repo["name"],
-                        "repo_url": repo["url"],
-                        "description_match": project.get("description"),
-                        "languages": languages,
-                        "stars": repo["stargazers_count"],
-                        "forks": repo["forks_count"],
-                        "size_kb": repo["size"],
-                        "updated": repo["updated_at"],
-                        "pushed": repo["pushed_at"],
-                    })
-                    matched = True
+
+        if not profile.get("exists"):
+            return result
+
+        aggregate_languages: Dict[str, int] = {}
+        for project in claimed_projects or []:
+            if not isinstance(project, dict):
+                continue
+
+            project_name = project.get("name") or project.get("title") or ""
+            search_results = self.search_repositories(clean_username, project_name)
+            result["search_queries"].append(project_name)
+
+            best_repo = self._best_repo_match(project, search_results)
+            if not best_repo:
+                result["unmatched_projects"].append(
+                    {
+                        "claimed_name": project_name,
+                        "claimed_technologies": project.get("technologies", []),
+                        "search_results": [repo.get("full_name") for repo in search_results[:3]],
+                    }
+                )
+                continue
+
+            languages = self.get_repo_languages(best_repo.get("full_name", ""))
+            for language, byte_count in languages.items():
+                aggregate_languages[language] = aggregate_languages.get(language, 0) + int(byte_count or 0)
+
+            top_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)[:5]
+            result["matched_projects"].append(
+                {
+                    "claimed_name": project_name,
+                    "repo_name": best_repo.get("name"),
+                    "repo_full_name": best_repo.get("full_name"),
+                    "repo_url": best_repo.get("url"),
+                    "repo_description": best_repo.get("description"),
+                    "search_result_count": len(search_results),
+                    "match_reason": "targeted_search_match",
+                    "top_languages": top_languages,
+                    "languages": languages,
+                    "stars": best_repo.get("stargazers_count", 0),
+                    "forks": best_repo.get("forks_count", 0),
+                    "size_kb": best_repo.get("size", 0),
+                    "updated": best_repo.get("updated_at"),
+                    "pushed": best_repo.get("pushed_at"),
+                }
+            )
+
+        total = len(claimed_projects) if claimed_projects else 0
+        matched = len(result["matched_projects"])
+        result["match_rate"] = matched / total if total else 0.0
+        result["language_footprint"] = aggregate_languages
+        result["verification_boost"] = min(100.0, matched * 20.0)
+        return result
+
+    def verify_tech_stack(
+        self,
+        username: str,
+        claimed_skills: List[str],
+        project_claims: Optional[List[Dict[str, Any]]] = None,
+    ) -> Dict[str, Any]:
+        """Verify claimed technologies against language footprints from targeted project matches."""
+
+        clean_username = self.sanitize_github_username(username)
+        logger.info("Verifying tech stack for %s: %s", clean_username, claimed_skills)
+
+        project_verification = self.verify_project_claims(clean_username, project_claims or []) if project_claims else {
+            "matched_projects": [],
+            "unmatched_projects": [],
+            "language_footprint": {},
+            "match_rate": 0.0,
+            "verification_boost": 0.0,
+        }
+
+        language_footprint = project_verification.get("language_footprint", {}) or {}
+        verified_skills: List[Dict[str, Any]] = []
+        partially_verified_skills: List[Dict[str, Any]] = []
+        unverified_skills: List[str] = []
+
+        normalized_languages = list(language_footprint.keys())
+        for skill in claimed_skills or []:
+            skill_lower = skill.lower().strip()
+            matched_language = None
+            match_type = None
+
+            for language in normalized_languages:
+                language_lower = language.lower().strip()
+                if self._is_semantic_match(skill_lower, language_lower):
+                    matched_language = language
+                    match_type = "direct" if skill_lower == language_lower else "semantic"
                     break
-            
-            if not matched:
-                verification_results["unmatched_projects"].append({
-                    "claimed_name": project.get("name"),
-                    "claimed_technologies": project.get("technologies", []),
-                })
-        
-        verification_results["match_rate"] = len(verification_results["matched_projects"]) / len(claimed_projects) if claimed_projects else 0
-        
-        logger.info(f"Project verification complete: {len(verification_results['matched_projects'])}/{len(claimed_projects)} matched")
-        return verification_results
-    
-    def get_contribution_percentage(self, username: str, repo_name: str) -> float:
-        """
-        Estimate user's contribution to a repository using metadata.
-        DEPRECATED: Commit API calls are disabled for rate limit optimization.
-        Uses repository size as a proxy metric.
-        """
-        logger.info(f"Estimating contribution for {username} in {repo_name}")
-        
-        try:
-            # Get repo metadata
-            url = f"{self.base_url}/repos/{username}/{repo_name}"
-            response = requests.get(url, headers=self.headers, timeout=GITHUB_TIMEOUT)
-            
-            if response.status_code == 200:
-                repo = response.json()
-                # Use repository size as a proxy for contribution
-                # Larger repos = more substantial contribution
-                size = repo.get("size", 0)
-                forks = repo.get("forks_count", 0)
-                
-                # Simple heuristic: if user is owner and repo is substantial, assume high contribution
-                estimated_contribution = min(100.0, (size / 1000.0) * 10) if size > 0 else 0.0
-                
-                logger.info(f"Estimated contribution: {estimated_contribution:.2f}%")
-                return estimated_contribution
+
+            if matched_language:
+                if match_type == "direct":
+                    verified_skills.append(
+                        {
+                            "skill": skill,
+                            "matched_language": matched_language,
+                            "match_type": match_type,
+                            "repo_mentions": language_footprint.get(matched_language, 0),
+                        }
+                    )
+                else:
+                    partially_verified_skills.append(
+                        {
+                            "skill": skill,
+                            "matched_language": matched_language,
+                            "match_type": match_type,
+                            "repo_mentions": language_footprint.get(matched_language, 0),
+                        }
+                    )
             else:
+                unverified_skills.append(skill)
+
+        total_claims = len(claimed_skills) if claimed_skills else 0
+        verified_count = len(verified_skills)
+        partial_count = len(partially_verified_skills)
+        verification_rate = (verified_count + partial_count * 0.75) / total_claims if total_claims else 0.0
+
+        return {
+            "username": clean_username,
+            "verified_skills": verified_skills,
+            "partially_verified_skills": partially_verified_skills,
+            "unverified_skills": unverified_skills,
+            "verification_rate": verification_rate,
+            "language_footprint": language_footprint,
+            "project_verification": project_verification,
+            "verified_repository_count": len(project_verification.get("matched_projects", [])),
+            "verified_language_count": len(language_footprint),
+        }
+
+    def get_contribution_percentage(self, username: str, repo_name: str) -> float:
+        """Estimate contribution using repository metadata when a specific repo is known."""
+
+        clean_username = self.sanitize_github_username(username)
+        if not clean_username or not repo_name:
+            return 0.0
+
+        try:
+            response = self._get(f"/repos/{clean_username}/{repo_name}")
+            if response.status_code != 200:
                 return 0.0
-        
-        except Exception as e:
-            logger.error(f"Error estimating contribution: {str(e)}")
+
+            repo = response.json()
+            size = repo.get("size", 0)
+            estimated_contribution = min(100.0, (size / 1000.0) * 10) if size > 0 else 0.0
+            return estimated_contribution
+        except Exception as exc:
+            logger.error("Error estimating contribution: %s", exc)
             return 0.0

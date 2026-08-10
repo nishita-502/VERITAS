@@ -13,7 +13,6 @@ class ClaimExtractor:
     CLAIM_TYPES = {
         "skill_match": "Technical skill proficiency",
         "numeric": "Numeric achievement (problems solved, etc)",
-        "timeline": "Time-based claim (worked during period X)",
         "depth": "Depth of knowledge/expertise",
         "link_verification": "External link validation",
     }
@@ -54,17 +53,6 @@ class ClaimExtractor:
                         "severity": "high",
                     })
                 
-                # Timeline claims from projects
-                if project.get("timeline"):
-                    claims.append({
-                        "id": f"timeline_{len(claims)}",
-                        "claim": f"Completed {project.get('name', 'project')} during {project['timeline']}",
-                        "claim_type": "timeline",
-                        "value": project["timeline"],
-                        "source": f"project_{project.get('name', 'unknown')}",
-                        "severity": "medium",
-                    })
-                
                 # Depth claims from projects
                 if project.get("description"):
                     claims.append({
@@ -76,22 +64,12 @@ class ClaimExtractor:
                         "severity": "medium",
                     })
         
-        # Work experience timeline claims
+        # Work experience technology claims
         if extracted_data.get("work_experience"):
             for exp in extracted_data["work_experience"]:
                 # Skip if exp is not a dict
                 if not isinstance(exp, dict):
                     continue
-                    
-                timeline = f"{exp.get('start_year', '?')}-{exp.get('end_year', '?')}"
-                claims.append({
-                    "id": f"work_timeline_{len(claims)}",
-                    "claim": f"Worked at {exp.get('company', 'unknown')} from {timeline}",
-                    "claim_type": "timeline",
-                    "value": timeline,
-                    "source": "work_experience",
-                    "severity": "high",
-                })
                 
                 # Technology claims from work experience
                 if exp.get("technologies"):

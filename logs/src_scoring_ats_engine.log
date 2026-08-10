@@ -44,3 +44,337 @@
 2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:142 | Calculating timeline consistency score
 2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_timeline_consistency_score:172 | Timeline consistency: 0.0%
 2026-02-19 13:50:22 | src.scoring.ats_engine | INFO | calculate_ats_score:262 | ATS Score calculated: 19 - 🔴 Poor Match
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:10:27 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 40 - 🟠 Weak Match
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:10:27 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-19 17:10:27 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 55 - 🟠 Weak Match
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:22:42 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 21 - 🔴 Poor Match
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:22:42 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:22:42 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 32 - 🔴 Poor Match
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:36:05 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 21 - 🔴 Poor Match
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:36:05 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:36:05 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 32 - 🔴 Poor Match
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:41:09 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 21 - 🔴 Poor Match
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:41:09 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:41:09 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 32 - 🔴 Poor Match
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_skill_match:95 | Skill match: 0.0%
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 4 - 🔴 Poor Match
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_skill_match:95 | Skill match: 0.0%
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:50:38 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 15 - 🔴 Poor Match
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_skill_match:95 | Skill match: 0.0%
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 4 - 🔴 Poor Match
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_skill_match:95 | Skill match: 0.0%
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 36.7%
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-19 17:55:38 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 15 - 🔴 Poor Match
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 09:34:29 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 20 - 🔴 Poor Match
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 09:34:29 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-02-20 09:34:29 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 30 - 🔴 Poor Match
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 09:45:26 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 40 - 🟠 Weak Match
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 09:45:26 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 09:45:26 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 55 - 🟠 Weak Match
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 10:29:26 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 40 - 🟠 Weak Match
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 10:29:26 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 10:29:26 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 55 - 🟠 Weak Match
+2026-02-20 10:36:40 | src.scoring.ats_engine | INFO | calculate_ats_score_with_skills:412 | Calculating ATS score with PRE-EXTRACTED JD skills
+2026-02-20 10:36:40 | src.scoring.ats_engine | INFO | calculate_skill_match:64 | Calculating skill match
+2026-02-20 10:36:40 | src.scoring.ats_engine | INFO | calculate_skill_match:112 | Skill match: 100.0%
+2026-02-20 10:36:40 | src.scoring.ats_engine | INFO | calculate_project_depth:269 | Calculating project depth score
+2026-02-20 10:36:40 | src.scoring.ats_engine | INFO | calculate_project_depth:329 | Project depth score: 30.0%
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 10:38:20 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 40 - 🟠 Weak Match
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 10:38:20 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 10:38:20 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 56 - 🟠 Weak Match
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 10:41:25 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 38 - 🔴 Poor Match
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 10:41:25 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 10:41:25 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 54 - 🟠 Weak Match
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 11:47:16 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 36 - 🔴 Poor Match
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 11:47:16 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 20.0%
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 11:47:16 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 52 - 🟠 Weak Match
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 11:52:25 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 38 - 🔴 Poor Match
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-02-20 11:52:25 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_project_depth:303 | Project depth score: 30.0%
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 57.1%
+2026-02-20 11:52:25 | src.scoring.ats_engine | INFO | calculate_ats_score:467 | ATS Score calculated: 54 - 🟠 Weak Match
+2026-08-09 13:21:00 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-09 13:21:00 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-09 13:21:00 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-08-09 13:21:30 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-09 13:21:30 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-09 13:21:30 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-08-09 13:35:30 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-09 13:35:30 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-09 13:35:30 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 1 JD skills
+2026-08-10 10:03:51 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-10 10:03:51 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-08-10 10:03:52 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-08-10 10:03:52 | src.scoring.ats_engine | WARNING | calculate_project_depth:248 | No projects found for depth calculation
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_ats_score:473 | ATS Score calculated: 12 - 🔴 Poor Match
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-08-10 10:03:52 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-08-10 10:03:52 | src.scoring.ats_engine | WARNING | calculate_project_depth:248 | No projects found for depth calculation
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-08-10 10:03:52 | src.scoring.ats_engine | INFO | calculate_ats_score:473 | ATS Score calculated: 20 - 🔴 Poor Match
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-08-10 12:49:54 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-08-10 12:49:54 | src.scoring.ats_engine | WARNING | calculate_project_depth:248 | No projects found for depth calculation
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_ats_score:473 | ATS Score calculated: 12 - 🔴 Poor Match
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_ats_score:388 | Calculating ATS score with REBALANCED formula
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | extract_jd_skills:18 | Extracting skills from JD
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | extract_jd_skills:37 | Found 0 JD skills
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_skill_match:47 | Calculating skill match
+2026-08-10 12:49:54 | src.scoring.ats_engine | WARNING | calculate_skill_match:51 | No JD skills to match against - this may indicate extraction failure
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_project_depth:243 | Calculating project depth score
+2026-08-10 12:49:54 | src.scoring.ats_engine | WARNING | calculate_project_depth:248 | No projects found for depth calculation
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_external_verification_score:314 | Calculating external verification score
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_external_verification_score:355 | External verification score: 0.0%
+2026-08-10 12:49:54 | src.scoring.ats_engine | INFO | calculate_ats_score:473 | ATS Score calculated: 20 - 🔴 Poor Match
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_ats_score:362 | Calculating ATS score with neutral-base formula
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | extract_jd_skills:23 | Extracting skills from JD
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | extract_jd_skills:36 | Using 4 JD skills from structured JD data
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_skill_match:66 | Calculating skill match
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_skill_match:119 | Skill match: 100.0%
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_project_depth:242 | Calculating project depth score
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_project_depth:290 | Project depth score: 33.7%
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_external_verification_boost:302 | Calculating external verification boost
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_external_verification_boost:340 | External evidence strength: 0.0%
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_ats_score:440 | ATS Score calculated: 65 - 🟡 Moderate Match
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_ats_score:362 | Calculating ATS score with neutral-base formula
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | extract_jd_skills:23 | Extracting skills from JD
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | extract_jd_skills:36 | Using 4 JD skills from structured JD data
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_skill_match:66 | Calculating skill match
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_skill_match:119 | Skill match: 100.0%
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_project_depth:242 | Calculating project depth score
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_project_depth:290 | Project depth score: 33.7%
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_external_verification_boost:302 | Calculating external verification boost
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_external_verification_boost:340 | External evidence strength: 0.0%
+2026-08-10 14:02:01 | src.scoring.ats_engine | INFO | calculate_ats_score:440 | ATS Score calculated: 91 - 🟢 Strong Match

@@ -18,30 +18,60 @@ CHROMA_DB_DIR = PROJECT_ROOT / "chroma_db"
 DATA_DIR.mkdir(exist_ok=True)
 CHROMA_DB_DIR.mkdir(exist_ok=True)
 
-# LLM Configuration (Ollama Local)
-LLM_MODEL = os.getenv("LLM_MODEL", "mistral")
+# Groq LLM Configuration
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_BASE_URL = os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1")
+GROQ_TEMPERATURE = float(os.getenv("GROQ_TEMPERATURE", "0"))
+
+# Backwards-compatible aliases used throughout the codebase
+LLM_MODEL = GROQ_MODEL
+LLM_TEMPERATURE = GROQ_TEMPERATURE
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
-LLM_TEMPERATURE = 0  # Deterministic for structured extraction
-LLM_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+
+# Optional SharpAPI resume parsing
+SHARPAPI_BASE_URL = os.getenv("SHARPAPI_BASE_URL", "https://api.sharpapi.ai")
+SHARPAPI_API_KEY = os.getenv("SHARPAPI_API_KEY", "")
+ENABLE_SHARPAPI_PARSER = os.getenv("ENABLE_SHARPAPI_PARSER", "false").lower() in {"1", "true", "yes"}
 
 # GitHub API Configuration
 GITHUB_API_BASE = "https://api.github.com"
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")  # Optional, increases rate limit
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 GITHUB_RATE_LIMIT_REQUESTS = 60 if not GITHUB_TOKEN else 5000
 GITHUB_TIMEOUT = 10
 
 # Verification Thresholds
-MIN_TRUST_SCORE = 0  # Minimum to be considered verified
-PARTIAL_MATCH_THRESHOLD = 70  # Trust score >= this is partial
-VERIFIED_THRESHOLD = 85  # Trust score >= this is verified
+MIN_TRUST_SCORE = 0
+PARTIAL_MATCH_THRESHOLD = 70
+VERIFIED_THRESHOLD = 85
 
-# ATS Scoring Weights
+# ATS Scoring Weights - base score only (external evidence acts as a boost)
 ATS_WEIGHTS = {
-    "jd_skill_match": 0.4,
-    "verified_claims": 0.3,
-    "resume_completeness": 0.2,
-    "timeline_consistency": 0.1,
+    "jd_requirement_alignment": 0.65,
+    "resume_completeness": 0.35,
 }
+
+# Detailed ATS Scoring Breakdown (for UI transparency)
+ATS_WEIGHTS_DETAILED = {
+    "base_alignment": {
+        "weight": 1.0,
+        "components": {
+            "jd_requirement_alignment": 0.65,
+            "resume_completeness": 0.35,
+        },
+    },
+    "external_verification": {
+        "weight": 0.0,
+        "components": {
+            "github_verification": 0.0,
+            "kaggle_verification": 0.0,
+            "competitive_programming": 0.0,
+        },
+    },
+}
+
+# Timeline Configuration - informational only
+ENABLE_TIMELINE_VALIDATION = True
 
 # Chroma DB Configuration
 CHROMA_COLLECTION_NAME = "veritas_resumes"
@@ -59,7 +89,7 @@ EMAIL_REGEX = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 CGPA_REGEX = r"(?:CGPA|GPA|C\.G\.P\.A)[:\s]*([0-9]\.[0-9]{1,2})"
 PHONE_REGEX = r"(?:\+?91[\s\-]?)?[0-9]{10}"
 
-# Timeline Configuration
+# Current Year for Validation
 CURRENT_YEAR = 2026
 
 # Logging Configuration
@@ -70,8 +100,7 @@ LOG_DIR.mkdir(exist_ok=True)
 # Feature Flags
 ENABLE_GITHUB_VERIFICATION = True
 ENABLE_KAGGLE_VERIFICATION = True
-ENABLE_LINKEDIN_VERIFICATION = False  # LinkedIn scraping often blocked
+ENABLE_LINKEDIN_VERIFICATION = False
 ENABLE_TECH_CONSISTENCY_CHECK = True
-ENABLE_TIMELINE_VALIDATION = True
 
 print(f"✅ Configuration loaded from {PROJECT_ROOT}")
